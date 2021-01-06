@@ -1,5 +1,9 @@
 # gt-demos
 
+
+`Metacello new baseline: 'GtDemos'; repository: 'github://onierstrasz/gt-demos/src'; load.`
+
+
 ## Various demos in Gt
 
 Repo for random experiments.
