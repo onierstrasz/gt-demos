@@ -1,4 +1,8 @@
-# gt-experiments
+# gt-demos
+
+## Various demos in Gt
+
+Repo for random experiments.
 
 
 ## Documents (doc folder)
