@@ -7,5 +7,9 @@ Class {
 { #category : #baselines }
 BaselineOfGtDemos >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: #'GtDemos-BouncingAtoms' ]
+	spec
+		for: #common
+		do: [ spec
+				package: #GtDemos;
+				package: #'GtDemos-BouncingAtoms' ]
 ]
