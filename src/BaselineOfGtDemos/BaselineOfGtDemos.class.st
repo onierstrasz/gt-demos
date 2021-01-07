@@ -10,9 +10,9 @@ BaselineOfGtDemos >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
-				package: #GtDemos
-				";
-				package: #'GtDemos-BouncingAtoms';
-				package: #'GtDemos-PostOffice' "
-				]
+				package: #GtDemos;
+				package: #'GtDemos-PostOffice'
+				"; package: #'GtDemos-BouncingAtoms'"
+				
+				 ]
 ]
