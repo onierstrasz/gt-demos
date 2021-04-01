@@ -48,3 +48,14 @@ PrimeSieve >> demo [
 	view layout grid.
 	^ view
 ]
+
+{ #category : #accessing }
+PrimeSieve >> primesClicked [
+	<gtExample>
+	| view |
+	view := self demo.
+	(view root children
+		select: [ :elt | elt background paint color = Color white ])
+		do: [ :each | each dispatchEvent: BlClickEvent new ].
+	^ view
+]
