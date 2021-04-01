@@ -16,6 +16,16 @@ Class {
 }
 
 { #category : #accessing }
+PrimeSieve >> clickAll [
+	<gtExample>
+	| view nodes |
+	view := self demo.
+	view root children
+		do: [ :node | node dispatchEvent: BlClickEvent new ].
+	^ view
+]
+
+{ #category : #accessing }
 PrimeSieve >> demo [
 	"Generates a 1000 node grid. If you click on a white node, it will turn blue
 	and its multiple turn grey. A grey node no longer reacts to a click.
@@ -51,11 +61,18 @@ PrimeSieve >> demo [
 
 { #category : #accessing }
 PrimeSieve >> primesClicked [
+	"Simulate a user clicking all the white nodes in sequence."
+
 	<gtExample>
-	| view |
+	| view nodes |
 	view := self demo.
-	(view root children
-		select: [ :elt | elt background paint color = Color white ])
-		do: [ :each | each dispatchEvent: BlClickEvent new ].
+	nodes := view root children asArray asOrderedCollection.
+	[ (Delay forSeconds: 2) wait.
+	[ nodes notEmpty ]
+		whileTrue: [ | node |
+			node := nodes removeFirst.
+			node background paint color = Color white
+				ifTrue: [ (Delay forMilliseconds: 100) wait.
+					node dispatchEvent: BlClickEvent new ] ] ] fork.
 	^ view
 ]
