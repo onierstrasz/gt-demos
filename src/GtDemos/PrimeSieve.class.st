@@ -7,11 +7,21 @@ PrimeSieve new demo
 
 Actually this is intended to show that creating such a demo is rather clunky with GtMondrian, and that a higher-level builder interface would be welcome.
 
+You can also set the maximum value, and simulate a user clicking on the nodes in order:
+
+[[[
+PrimeSieve new maxValue: 100; primesClicked
+]]]
+
+
 
 "
 Class {
 	#name : #PrimeSieve,
 	#superclass : #Object,
+	#instVars : [
+		'maxValue'
+	],
 	#category : #'GtDemos-GtMondrian'
 }
 
@@ -54,9 +64,24 @@ PrimeSieve >> demo [
 										select: [ :ea | ea graph model \\ n = 0 ].
 									multiples allButFirst
 										do: [ :ea | ea background: Color lightGray ] ] ] ] ];
-		with: (1 to: 1000).
+		with: (1 to: self maxValue).
 	view layout grid.
 	^ view
+]
+
+{ #category : #accessing }
+PrimeSieve >> initialize [
+	maxValue := 1000
+]
+
+{ #category : #accessing }
+PrimeSieve >> maxValue [
+	^ maxValue
+]
+
+{ #category : #accessing }
+PrimeSieve >> maxValue: anInteger [
+	maxValue := anInteger
 ]
 
 { #category : #accessing }
