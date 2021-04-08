@@ -70,6 +70,35 @@ PrimeSieve >> demo [
 ]
 
 { #category : #accessing }
+PrimeSieve >> demoDSL [
+	"This version uses extension methods of GtMondrianNodeBuilder to raise the interface to a slightly higher level."
+
+	<gtExample>
+	| view |
+	view := GtMondrian new.
+	view nodes
+		ellipse;
+		background: Color white;
+		size: 50 @ 50;
+		margin: 5;
+		tooltip;
+		onClick: [ :n :anEvent | 
+			| elt multiples |
+			elt := anEvent target.
+			n = 1
+				ifTrue: [ elt background: Color lightGray ]
+				ifFalse: [ elt background paint color ~= Color lightGray
+						ifTrue: [ elt background: Color lightBlue.
+							multiples := view root graph allNodeChildren
+								select: [ :ea | ea graph model \\ n = 0 ].
+							multiples allButFirst
+								do: [ :ea | ea background: Color lightGray ] ] ] ];
+		with: (1 to: self maxValue).
+	view layout grid.
+	^ view
+]
+
+{ #category : #accessing }
 PrimeSieve >> initialize [
 	maxValue := 1000
 ]
