@@ -7,7 +7,7 @@ Class {
 { #category : #accessing }
 DragDropDemo >> uglyDemo [
 <gtExample>
-"Demo showing how to let the blue guy be dropped omto (and into) the red guy."
+"Demo showing how to let the blue guy be dropped onto (and into) the red guy."
 | container redGuy blueGuy |
 	container := BlElement new.
 container size: 600@400.
