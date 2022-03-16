@@ -1,5 +1,5 @@
 Class {
 	#name : #BlElementEventListener,
-	#superclass : #BlBasicEventHandler,
+	#superclass : #BlEventListener,
 	#category : #'Tutorial-MemoryGame-UI'
 }
