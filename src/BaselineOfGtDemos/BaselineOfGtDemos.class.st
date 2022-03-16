@@ -10,7 +10,9 @@ BaselineOfGtDemos >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec
-				package: #GtDemos
+				package: #GtDemos;
+				package: #'Tutorial-MemoryGame-Model';
+				package: #'Tutorial-MemoryGame-UI'
 				"; package: #'GtDemos-PostOffice'"
 				"; package: #'GtDemos-BouncingAtoms'"
 				
