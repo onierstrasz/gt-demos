@@ -42,5 +42,6 @@ GameElement >> onUpdated [
 	self game availableCards do: [ :aCard | 
 		| aCardElement |
 		aCardElement := self newCardElement card: aCard.	
+		aCardElement addEventHandler: (CardEventListener new game: self game).
 		self addChild: aCardElement ]
 ]
