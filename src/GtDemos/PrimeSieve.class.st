@@ -1,19 +1,17 @@
 "
 Demos how to create an interactive prime sieve with Mondrian.
 
-[[[
+```
 PrimeSieve new demo
-]]]
+```
 
 Actually this is intended to show that creating such a demo is rather clunky with GtMondrian, and that a higher-level builder interface would be welcome.
 
 You can also set the maximum value, and simulate a user clicking on the nodes in order:
 
-[[[
+```
 PrimeSieve new maxValue: 100; primesClicked
-]]]
-
-
+```
 
 "
 Class {
