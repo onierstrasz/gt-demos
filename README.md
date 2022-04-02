@@ -7,6 +7,11 @@ Metacello new baseline: 'GtDemos';
   load.
 ```
 
+Then:
+```
+BaselineOfGtDemos loadLepiter
+```
+
 
 ## Various demos in Gt
 
