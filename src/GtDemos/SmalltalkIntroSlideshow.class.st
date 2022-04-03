@@ -18,6 +18,14 @@ SmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
+SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #bouncingAtoms:);
+		  pageNamed: 'Bouncing atoms demo' from: self dbName
+]
+
+{ #category : #accessing }
 SmalltalkIntroSlideshow >> dbName [
 	^ 'onierstrasz/gt-demos/lepiter'
 ]
@@ -43,6 +51,7 @@ SmalltalkIntroSlideshow >> slides [
 		titleSlideFor:
 		syntax:
 		messages:
+		bouncingAtoms:
 		)
 ]
 

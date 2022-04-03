@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:41.066336+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:15.549839+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:46.664976+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:15.549839+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "x7SJsB6YDQCE5ADvAQVyuA=="
+					"uidString" : "baPleh6YDQCEyXoyAQVyuA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Work on the [[Smalltalk Intro outline]]."
+				"string" : "Demos how to create an interactive prime sieve with Mondrian."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T11:36:20.396154+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T11:36:24.121474+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lJgvex6YDQCEym0IAQVyuA=="
+				},
+				"code" : "PrimeSieve new demo"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:46.987696+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:34.336286+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +100,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:46.987696+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:34.336286+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ylCRuR6YDQCFCS8WAQVyuA=="
+					"uidString" : "nksEfB6YDQCEzXmoAQVyuA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Actually this is intended to show that creating such a demo is rather clunky with GtMondrian, and that a higher-level builder interface would be welcome."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:39.14755+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:10.377785+02:00"
 					}
 				},
 				"editEmail" : {
@@ -103,20 +137,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:39.14755+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:42.111703+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Xq8ZuR6YDQCFAalYAQVyuA=="
+					"uidString" : "mbxBeR6YDQCEyKthAQVyuA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "You can also set the maximum value, and simulate a user clicking on the nodes in order:"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -129,7 +163,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:39.444989+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:44.075586+02:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +174,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:53:39.444989+02:00"
+						"dateAndTimeString" : "2022-04-03T11:36:45.752879+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "IDkeuR6YDQCFBMW2AQVyuA=="
+					"uidString" : "XeqYfB6YDQCEzkSNAQVyuA=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "PrimeSieve new maxValue: 100; primesClicked"
 			}
 		]
 	},
@@ -162,7 +193,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-04-02T10:58:29.93371+02:00"
+			"dateAndTimeString" : "2022-04-03T11:35:40.146226+02:00"
 		}
 	},
 	"editEmail" : {
@@ -173,15 +204,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-04-02T10:58:29.93371+02:00"
+			"dateAndTimeString" : "2022-04-03T11:41:29.02286+02:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "todo"
+		"title" : "Prime Sieve demo"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "45b603d6-0998-0d00-8795-edea0e07c32d"
+		"uuid" : "9f6dc978-1e98-0d00-84c4-b5f3010572b8"
 	}
 }

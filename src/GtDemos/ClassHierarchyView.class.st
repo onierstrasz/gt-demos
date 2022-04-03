@@ -1,35 +1,5 @@
 "
-Shows how to have an automatically updating gtView.
-
-Create the class ==Dummy==:
-
-[[[
-Object subclass: #Dummy.
-]]]
-
-Open a class hierarchy view on that class:
-
-[[[]
-ClassHierarchyView new forClass: Dummy.
-]]]
-
-Create a subclass and see the view update:
-
-[[[]
-Dummy subclass: #Foo
-]]]
-
-Remove ==Foo== and ==Dummy== to update the view again:
-[[[]
-Foo removeFromSystem
-]]]
-
-[[[
-Dummy removeFromSystem
-]]]
-
-The magic is in the ${method:name=ClassHierarchyView>>#gtLiveFor:}$ method which updates when classes are added or removed.
-
+See the `Class Hierarchy update demo` page.
 
 "
 Class {

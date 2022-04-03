@@ -1,7 +1,6 @@
 "
-[[[
 PostOffice gtExamples collect: [:each | each run returnValue]
-]]]
+
 "
 Class {
 	#name : #PostOffice,

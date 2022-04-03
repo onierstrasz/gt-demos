@@ -89,6 +89,77 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T10:58:09.081061+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T10:58:11.825384+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HH2M8h2YDQCVUd43A/PNPQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Example slides:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T10:58:01.684956+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-03T10:58:02.578887+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/gss8h2YDQCVT7gzA/PNPQ=="
+				},
+				"code" : "GtLiveShow openInSpace: GtExampleLiveShow"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-04-03T09:45:01.610444+02:00"
 					}
 				},
@@ -604,42 +675,7 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "pharoSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-03T10:35:16.561036+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-03T10:35:17.248849+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "rejNoB2YDQClb7kEA+7/sw=="
-										},
-										"code" : "BlBouncingAtomsElement demo"
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -660,7 +696,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T09:42:45.570486+02:00"
+									"dateAndTimeString" : "2022-04-03T11:22:00.571586+02:00"
 								}
 							},
 							"uid" : {
@@ -670,7 +706,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Bouncing atoms?"
+							"string" : "[[Bouncing atoms demo]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -686,7 +722,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T10:34:54.953639+02:00"
+									"dateAndTimeString" : "2022-04-03T11:22:18.725635+02:00"
 								}
 							},
 							"editEmail" : {
@@ -697,60 +733,98 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T10:34:54.953639+02:00"
+									"dateAndTimeString" : "2022-04-03T11:23:04.239556+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "1DSEnx2YDQClZsQeA+7/sw=="
+								"uidString" : "tUjzSB6YDQCEdr44AQVyuA=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "[[Post Office demo]]"
 						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T09:42:47.549099+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T09:42:49.304037+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "oc4B5RyYDQCkav4ZA+7/sw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Post office"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T11:03:39.267007+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T11:03:39.267007+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "cr2tBR6YDQCENF0FAQVyuA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:A gentle introduction to Pharo Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}}"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T11:04:51.857171+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-03T11:23:09.627308+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "hkBkBh6YDQCENzacAQVyuA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:A gentle introduction to classes and methods in Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}} "
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
