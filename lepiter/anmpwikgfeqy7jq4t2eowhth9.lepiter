@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T09:45:18.530747+02:00"
+						"dateAndTimeString" : "2022-04-04T08:31:58.107792+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "tagT7hyYDQCkrlyIA+7/sw=="
 				},
-				"code" : "SmalltalkIntroSlideshow show"
+				"code" : "SmalltalkIntroSlideshow show "
 			},
 			{
 				"__type" : "textSnippet",
@@ -100,7 +100,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T10:58:11.825384+02:00"
+						"dateAndTimeString" : "2022-04-04T08:31:42.515604+02:00"
 					}
 				},
 				"uid" : {
@@ -110,7 +110,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Example slides:"
+				"string" : "Example slides: "
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -364,7 +364,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-03T10:23:49.846563+02:00"
+												"dateAndTimeString" : "2022-04-04T08:32:24.220621+02:00"
 											}
 										},
 										"uid" : {
