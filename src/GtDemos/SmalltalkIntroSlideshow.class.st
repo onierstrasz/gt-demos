@@ -32,6 +32,37 @@ SmalltalkIntroSlideshow >> dbName [
 ]
 
 { #category : #accessing }
+SmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #everythingHappensBySendingMessages:);
+		  pageNamed: 'Everything happens by sending messages' from: self dbName
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #everythingIsAnObject:);
+		  pageNamed: 'Everything is an object' from: self dbName
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> imageChanges: aSlide [
+	<gtSlide>
+	^ aSlide textAndElement
+		  elementWeight: 0.70;
+		  priority: (self priorityFor: #imageChanges:);
+		  newText: 'To be expanded:
+Original pure OOPL
+First windowing system and IDE';
+		  element: [ 
+			  GtFilePictureLiveSlide new fileReference:
+					  (GtResourcesUtility resourceAtPath:
+							   'onierstrasz/gt-demos/images/image+changes.png') ]
+]
+
+{ #category : #accessing }
 SmalltalkIntroSlideshow >> messages: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -46,14 +77,54 @@ SmalltalkIntroSlideshow >> outline: aSlide [
 		  priority: (self priorityFor: #outline:);
 		  subtitle: 'Outline';
 		  paragraph: '
-Brief outline of what''s to come
-...
+• Background: What''s Smalltalk?
+• Basics: syntax, sending messages
+• Programming in the Playground
+• Programming classes and methods in the Coder
+• ...
 '
 ]
 
 { #category : #accessing }
+SmalltalkIntroSlideshow >> priorities [
+	"Instead of manually setting priorities, just list the slides in order here."
+	<gtExample>
+	^ #( 
+		titleSlideFor:
+		outline:
+		smalltalk80:
+		imageChanges:
+		twoRules:
+		everythingIsAnObject:
+		everythingHappensBySendingMessages:
+		syntax:
+		messages:
+		scriptingInThePlayground:
+		programmingClassesAndMethods:
+		bouncingAtoms:
+		worldExampleSlideFor:
+		)
+]
+
+{ #category : #accessing }
 SmalltalkIntroSlideshow >> priorityFor: aSlideMethodSelector [
-	^ self slides indexOf: aSlideMethodSelector
+	^ self priorities indexOf: aSlideMethodSelector
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #programmingClassesAndMethods:);
+		  pageNamed: 'Programming Classes and Methods' from: self dbName
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #scriptingInThePlayground:);
+		  pageNamed: 'Scripting in the Playground' from: self dbName
 ]
 
 { #category : #accessing }
@@ -77,7 +148,9 @@ SmalltalkIntroSlideshow >> smalltalk80: aSlide [
 	^ aSlide textAndElement
 		  elementWeight: 0.70;
 		  priority: (self priorityFor: #smalltalk80:);
-		  newText: 'Add Text here';
+		  newText: 'To be expanded:
+Original pure OOPL
+First windowing system and IDE';
 		  element: [ 
 			  GtFilePictureLiveSlide new fileReference:
 					  (GtResourcesUtility resourceAtPath:
@@ -107,10 +180,12 @@ SmalltalkIntroSlideshow >> twoRules: aSlide [
 	<gtSlide>
 	^ aSlide paragraph
 		  priority: (self priorityFor: #twoRules:);
-		  subtitle: 'Outline';
+		  subtitle: 'Two rules';
 		  paragraph: '
-Brief outline of what''s to come
-...
+		  
+1. Everything is an object
+
+2. Everything happens by sending messages
 '
 ]
 
@@ -118,6 +193,5 @@ Brief outline of what''s to come
 SmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide world
-		  priority: (self priorityFor: #worldExampleSlideFor:);
-		  text: 'The GT WOrld'
+		  priority: (self priorityFor: #worldExampleSlideFor:)
 ]
