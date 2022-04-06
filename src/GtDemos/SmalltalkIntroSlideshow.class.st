@@ -19,7 +19,6 @@ SmalltalkIntroSlideshow class >> show [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
-
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #bouncingAtoms:);
@@ -41,6 +40,18 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 ]
 
 { #category : #accessing }
+SmalltalkIntroSlideshow >> outline: aSlide [
+	<gtSlide>
+	^ aSlide paragraph
+		  priority: (self priorityFor: #outline:);
+		  subtitle: 'Outline';
+		  paragraph: '
+Brief outline of what''s to come
+...
+'
+]
+
+{ #category : #accessing }
 SmalltalkIntroSlideshow >> priorityFor: aSlideMethodSelector [
 	^ self slides indexOf: aSlideMethodSelector
 ]
@@ -51,10 +62,26 @@ SmalltalkIntroSlideshow >> slides [
 	<gtExample>
 	^ #( 
 		titleSlideFor:
+		outline:
+		smalltalk80:
+		twoRules:
 		syntax:
 		messages:
 		bouncingAtoms:
 		)
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> smalltalk80: aSlide [
+	<gtSlide>
+	^ aSlide textAndElement
+		  elementWeight: 0.70;
+		  priority: (self priorityFor: #smalltalk80:);
+		  newText: 'Add Text here';
+		  element: [ 
+			  GtFilePictureLiveSlide new fileReference:
+					  (GtResourcesUtility resourceAtPath:
+							   'onierstrasz/gt-demos/images/smalltalk-80.png') ]
 ]
 
 { #category : #accessing }
@@ -67,11 +94,30 @@ SmalltalkIntroSlideshow >> syntax: aSlide [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
-
 	<gtSlide>
 	^ aSlide title
 		  priority: (self priorityFor: #titleSlideFor:);
 		  titleWithFormat: ('A little bit of Smalltalk' asRopedText
 				   fontSize: 70;
 				   glamorousRegularFont)
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> twoRules: aSlide [
+	<gtSlide>
+	^ aSlide paragraph
+		  priority: (self priorityFor: #twoRules:);
+		  subtitle: 'Outline';
+		  paragraph: '
+Brief outline of what''s to come
+...
+'
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
+	<gtSlide>
+	^ aSlide world
+		  priority: (self priorityFor: #worldExampleSlideFor:);
+		  text: 'The GT WOrld'
 ]
