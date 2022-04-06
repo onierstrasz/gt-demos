@@ -19,10 +19,12 @@ SmalltalkIntroSlideshow class >> show [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
+
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #bouncingAtoms:);
-		  pageNamed: 'Bouncing atoms demo' from: self dbName
+		  pageNamed: 'Bouncing atoms demo' from: self dbName;
+		  yourself
 ]
 
 { #category : #accessing }
