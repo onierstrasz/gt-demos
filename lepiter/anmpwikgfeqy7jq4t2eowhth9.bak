@@ -467,7 +467,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T10:34:52.504192+02:00"
+									"dateAndTimeString" : "2022-04-07T16:27:46.997512+02:00"
 								}
 							},
 							"uid" : {
@@ -477,7 +477,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Smalltalk Syntax]]"
+							"string" : "[[Smalltalk Syntax (the funny bits)]]"
 						},
 						{
 							"__type" : "textSnippet",

@@ -732,7 +732,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-07T15:11:47.080587+02:00"
+												"dateAndTimeString" : "2022-04-07T17:47:50.659948+02:00"
 											}
 										},
 										"uid" : {
@@ -742,7 +742,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtPage:A gentle introduction to Pharo Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}} "
+										"string" : "{{gtPage:A gentle introduction to Pharo Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 									},
 									{
 										"__type" : "textSnippet",
@@ -769,7 +769,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-07T15:12:10.551829+02:00"
+												"dateAndTimeString" : "2022-04-07T17:47:52.594013+02:00"
 											}
 										},
 										"uid" : {
@@ -779,7 +779,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtPage:A gentle introduction to classes and methods in Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}} "
+										"string" : "{{gtPage:A gentle introduction to classes and methods in Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 									}
 								]
 							},
