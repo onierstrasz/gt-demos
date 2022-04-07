@@ -17,7 +17,7 @@ SmalltalkIntroSlideshow class >> show [
 	GtLiveShow openInSpace: SmalltalkIntroSlideshow
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -31,7 +31,7 @@ SmalltalkIntroSlideshow >> dbName [
 	^ 'onierstrasz/gt-demos/lepiter'
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -39,7 +39,7 @@ SmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
 		  pageNamed: 'Everything happens by sending messages' from: self dbName
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -47,7 +47,19 @@ SmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
 		  pageNamed: 'Everything is an object' from: self dbName
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
+SmalltalkIntroSlideshow >> gtWorld: aSlide [
+	<gtSlide>
+	^ aSlide textAndElement
+		  elementWeight: 0.60;
+		  priority: (self priorityFor: #gtWorld:);
+		  newTextWithFormat: ('GT is a live platform for software and data analysis, built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
+				   glamorousRegularFont;
+				   fontSize: 30);
+		  element: [ aSlide world ]
+]
+
+{ #category : #slides }
 SmalltalkIntroSlideshow >> imageChanges: aSlide [
 	<gtSlide>
 	^ aSlide textAndElement
@@ -62,7 +74,7 @@ First windowing system and IDE';
 							   'onierstrasz/gt-demos/images/image+changes.png') ]
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> messages: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -72,16 +84,18 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> outline: aSlide [
+
 	<gtSlide>
 	^ aSlide paragraph
 		  priority: (self priorityFor: #outline:);
 		  subtitle: 'Outline';
 		  paragraph: '
-• Background: What''s Smalltalk?
-• Basics: syntax, sending messages
-• Programming in the Playground
-• Programming classes and methods in the Coder
-• ...
+ 
+• Background — What is Smalltalk?
+• Basics — syntax, sending messages
+• Scripting in the Playground
+• Live programming of classes and methods
+• GT use cases
 '
 ]
 
@@ -93,6 +107,7 @@ SmalltalkIntroSlideshow >> priorities [
 		titleSlideFor:
 		outline:
 		smalltalk80:
+		gtWorld:
 		imageChanges:
 		twoRules:
 		everythingIsAnObject:
@@ -102,7 +117,7 @@ SmalltalkIntroSlideshow >> priorities [
 		scriptingInThePlayground:
 		programmingClassesAndMethods:
 		bouncingAtoms:
-		worldExampleSlideFor:
+
 		)
 ]
 
@@ -111,7 +126,7 @@ SmalltalkIntroSlideshow >> priorityFor: aSlideMethodSelector [
 	^ self priorities indexOf: aSlideMethodSelector
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -119,7 +134,7 @@ SmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
 		  pageNamed: 'Programming Classes and Methods' from: self dbName
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -128,36 +143,25 @@ SmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> slides [
-	"Instead of manually setting priorities, just list the slides in order here."
-	<gtExample>
-	^ #( 
-		titleSlideFor:
-		outline:
-		smalltalk80:
-		twoRules:
-		syntax:
-		messages:
-		bouncingAtoms:
-		)
-]
-
-{ #category : #accessing }
 SmalltalkIntroSlideshow >> smalltalk80: aSlide [
+
+	"In the late 60s, Alan Kay predicted that in the foreseeable future handheld multimedia computers would become affordable. He called this a “Dynabook”. (The photo shows a mockup, not a real computer.)
+He reasoned that such systems would need to be based on object from the ground up, so he set up a lab at the Xerox Palo Alto Research Center (PARC) to develop such a fully object-oriented system, including both software and hardware. They developed the first graphical workstations with windowing system and mouse."
+
 	<gtSlide>
 	^ aSlide textAndElement
-		  elementWeight: 0.70;
+		  elementWeight: 0.60;
 		  priority: (self priorityFor: #smalltalk80:);
-		  newText: 'To be expanded:
-Original pure OOPL
-First windowing system and IDE';
+		  newTextWithFormat: ('Smalltalk was the first purely object-oriented language and environment, with the first interactive, graphical IDE.' asRopedText
+				   glamorousRegularFont;
+				   fontSize: 30);
 		  element: [ 
 			  GtFilePictureLiveSlide new fileReference:
-					  (GtResourcesUtility resourceAtPath:
-							   'onierstrasz/gt-demos/images/smalltalk-80.png') ]
+				  (GtResourcesUtility resourceAtPath:
+					   'onierstrasz/gt-demos/images/smalltalk-80.png') ]
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> syntax: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
@@ -175,7 +179,7 @@ SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
 				   glamorousRegularFont)
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> twoRules: aSlide [
 	<gtSlide>
 	^ aSlide paragraph
@@ -189,9 +193,9 @@ SmalltalkIntroSlideshow >> twoRules: aSlide [
 '
 ]
 
-{ #category : #accessing }
+{ #category : #slides }
 SmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
-	<gtSlide>
+	"<gtSlide>"
 	^ aSlide world
 		  priority: (self priorityFor: #worldExampleSlideFor:)
 ]
