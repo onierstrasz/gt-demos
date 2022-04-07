@@ -53,7 +53,7 @@ SmalltalkIntroSlideshow >> gtWorld: aSlide [
 	^ aSlide textAndElement
 		  elementWeight: 0.60;
 		  priority: (self priorityFor: #gtWorld:);
-		  newTextWithFormat: ('GT is a live platform for software and data analysis, built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
+		  newTextWithFormat: ('Glamorous Toolkit is a “moldable” development environment with native windows, software analysis support, and a visualization engine. Gt is built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
 				   glamorousRegularFont;
 				   fontSize: 30);
 		  element: [ aSlide world ]
