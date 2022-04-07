@@ -63,11 +63,11 @@ SmalltalkIntroSlideshow >> gtWorld: aSlide [
 SmalltalkIntroSlideshow >> imageChanges: aSlide [
 	<gtSlide>
 	^ aSlide textAndElement
-		  elementWeight: 0.70;
+		  elementWeight: 0.50;
 		  priority: (self priorityFor: #imageChanges:);
-		  newText: 'To be expanded:
-Original pure OOPL
-First windowing system and IDE';
+		  newTextWithFormat: ('Smalltalk is a live programming system. Objects live inside an image runninvg on a VM. Changes to classes and methods are logged as you program.' asRopedText
+				   glamorousRegularFont;
+				   fontSize: 30);
 		  element: [ 
 			  GtFilePictureLiveSlide new fileReference:
 					  (GtResourcesUtility resourceAtPath:
