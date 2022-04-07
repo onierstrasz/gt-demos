@@ -166,7 +166,7 @@ SmalltalkIntroSlideshow >> syntax: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #syntax:);
-		  pageNamed: 'Smalltalk Syntax' from: self dbName
+		  pageNamed: 'Smalltalk Syntax (the funny bits)' from: self dbName
 ]
 
 { #category : #accessing }

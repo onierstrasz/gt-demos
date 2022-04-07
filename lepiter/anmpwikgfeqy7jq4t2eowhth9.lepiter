@@ -456,43 +456,6 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T09:42:17.79667+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-07T15:09:52.95362+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "vIxP4xyYDQCkYhSeA+7/sw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Everything happens by sending messages]] "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
 									"dateAndTimeString" : "2022-04-03T10:33:50.825004+02:00"
 								}
 							},
@@ -504,7 +467,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T10:34:52.504192+02:00"
+									"dateAndTimeString" : "2022-04-07T16:27:46.997512+02:00"
 								}
 							},
 							"uid" : {
@@ -514,7 +477,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Smalltalk Syntax]]"
+							"string" : "[[Smalltalk Syntax (the funny bits)]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -611,7 +574,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T15:42:15.489769+02:00"
+						"dateAndTimeString" : "2022-04-07T16:21:45.006099+02:00"
 					}
 				},
 				"uid" : {
