@@ -426,7 +426,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-08T15:15:52.310432+02:00"
+									"dateAndTimeString" : "2022-04-08T15:15:54.850186+02:00"
 								}
 							},
 							"uid" : {
@@ -436,7 +436,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "See especially {{gtMethod:name=GtCoderSlideshow>>#baselineMethodsExplanationSlideFor:}}. and {{gtMethod:name=GtCoderSlideshow>>#exampleMethodExplanationSlideFor:}}. "
+							"string" : "See especially {{gtMethod:name=GtCoderSlideshow>>#baselineMethodsExplanationSlideFor:}} and {{gtMethod:name=GtCoderSlideshow>>#exampleMethodExplanationSlideFor:}}. "
 						},
 						{
 							"__type" : "textSnippet",

@@ -17,6 +17,14 @@ SmalltalkIntroSlideshow class >> show [
 	GtLiveShow openInSpace: SmalltalkIntroSlideshow
 ]
 
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> addTargetCircleFor: aTarget named: aSymbol [
+
+	aTarget addChild:
+		((self yellowExplanationTargetCircleFor: aSymbol) relocate:
+			 2 @ aTarget extent y / 2)
+]
+
 { #category : #slides }
 SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 	<gtSlide>
@@ -45,6 +53,15 @@ SmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #everythingIsAnObject:);
 		  pageNamed: 'Everything is an object' from: self dbName
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> findTargetWithText: aText in: expandedMethodElement [
+	^ expandedMethodElement
+		  allChildrenBreadthFirstDetect: [ :aChild | 
+			  (aChild isKindOf: BrTextElementWithCursors) and: [ 
+				  aChild text asString = aText asString ] ]
+		  ifFound: [ :aChild | aChild ]
 ]
 
 { #category : #slides }
@@ -103,7 +120,11 @@ Here is the ' asRopedText
 	        ,
 	        ('method selector' asRopedText glamorousExplanationFor:
 		         #selector) , ' and its' asRopedText
-	        , ('operand' asRopedText glamorousExplanationFor: #operand).
+	        , ('operand' asRopedText glamorousExplanationFor: #operand),
+	        
+	        'Here''s a ' asRopedText,
+	        ('temporary' asRopedText glamorousExplanationFor: #temporary)
+	        .
 
 	^ text asRopedText
 		  glamorousRegularFont;
@@ -116,7 +137,7 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 	"Adapted from GtCoderSlideshow"
 
 	<gtExample>
-	| aMethod aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget |
+	| aMethod aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget |
 	aMethod := DateAndTime >> #+.
 
 	aClass := DateAndTime.
@@ -131,28 +152,14 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 		                         allChildrenBreadthFirstDetect: [ :aChild | 
 		                         aChild isKindOf: BrInfiniteListElement ]
 		                         ifFound: [ :aChild | aChild childAt: 1 ].
-	selectorTarget := expandedMethodElement
-		                  allChildrenBreadthFirstDetect: [ :aChild | 
-			                  (aChild isKindOf: BrTextElementWithCursors) and: [ 
-				                  aChild text asString = '+' asString ] ]
-		                  ifFound: [ :aChild | aChild ].
+		                         
+	selectorTarget := self findTargetWithText: '+' in: expandedMethodElement.
+	operandTarget := self findTargetWithText: 'operand' in: expandedMethodElement.
+	temporaryTarget := self findTargetWithText: 'durationTicks' in: expandedMethodElement.
 
-	operandTarget := expandedMethodElement
-		                 allChildrenBreadthFirstDetect: [ :aChild | 
-			                 (aChild isKindOf: BrTextElementWithCursors) and: [ 
-				                 aChild text asString = 'operand' asString ] ]
-		                 ifFound: [ :aChild | aChild ].
-
-	selectorTarget addChild:
-		((self yellowExplanationTargetCircleFor: #selector) relocate:
-			 2 @ selectorTarget extent y / 2).
-
-
-	operandTarget addChild:
-		((self yellowExplanationTargetCircleFor: #operand) relocate:
-			 2 @ operandTarget extent y / 2).
-
-
+	self addTargetCircleFor: selectorTarget named: #selector.
+	self addTargetCircleFor: operandTarget named: #operand.
+	self addTargetCircleFor: temporaryTarget named: #temporary.
 
 	^ classCoderElement
 ]
