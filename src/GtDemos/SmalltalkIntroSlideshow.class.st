@@ -133,37 +133,25 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 		allChildrenBreadthFirstDetect: [:aChild |
 			aChild isKindOf: BrInfiniteListElement]
 		ifFound: [:aChild | aChild childAt: 1].
+	
 	pragmaTarget := expandedMethodElement
 		allChildrenBreadthFirstDetect: [:aChild |
 			(aChild isKindOf: BrTextElementWithCursors) and: [aChild text asString = '<gtExample>' asString]]
 		ifFound: [:aChild | aChild].
-	buttonsList := expandedMethodElement
+	
+	"buttonsList := expandedMethodElement
 		allChildrenBreadthFirstSelect: [:aChild | aChild isKindOf: BrButton].
 
 	evaluateTarget := expandedMethodElement childNamed: GtMethodCoderPlayExampleActionId.
 	inspectTarget := expandedMethodElement childNamed: GtMethodCoderPlayAndInspectExampleActionId.
-	debugTarget := expandedMethodElement childNamed: GtMethodCoderDebugExampleActionId.
+	debugTarget := expandedMethodElement childNamed: GtMethodCoderDebugExampleActionId."
 
 	pragmaTarget
 		addChild:
 			((self yellowExplanationTargetCircleFor: #gtView)
 					relocate:
 						(2 @ pragmaTarget extent y / 2)).
-	evaluateTarget
-		addChild:
-			((self yellowExplanationTargetCircleFor: #evaluateButton)
-					relocate:
-						(2 @ evaluateTarget extent y / 2)).
-	inspectTarget
-		addChild:
-			((self yellowExplanationTargetCircleFor: #inspectButton)
-					relocate:
-						(2 @ inspectTarget extent y / 2)).
-	debugTarget
-		addChild:
-			((self yellowExplanationTargetCircleFor: #debugButton)
-					relocate:
-						(2 @ debugTarget extent y / 2)).
+
 	
 	^ classCoderElement.
 ]
