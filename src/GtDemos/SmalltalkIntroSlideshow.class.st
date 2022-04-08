@@ -99,12 +99,11 @@ SmalltalkIntroSlideshow >> methodSyntaxExplanation [
 
 	| text |
 	text := 'PLACEHOLDER TO BE FIXED
-
-Also, if a method is annotated with the ' asRopedText
-	        , ('gtExample' asRopedText glamorousExplanationFor: #gtView)
+Here is the ' asRopedText
 	        ,
-		        ' pragma, the coder offers you additional buttons similar to the ones in the playground.'
-			        asRopedText.
+	        ('method selector' asRopedText glamorousExplanationFor:
+		         #selector) , ' and its' asRopedText
+	        , ('operand' asRopedText glamorousExplanationFor: #operand).
 
 	^ text asRopedText
 		  glamorousRegularFont;
@@ -113,47 +112,49 @@ Also, if a method is annotated with the ' asRopedText
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
+
 	"Adapted from GtCoderSlideshow"
+
 	<gtExample>
-	| classCoderElement pragmaTarget inspectTarget evaluateTarget debugTarget aScripter expandedMethodElement buttonsList |
-	
-	classCoderElement := (GtInspector createOn:(GtPharoBehaviorCoder forClass: GtABAddressBookExample)) maximized.
-	
-	aScripter := BlDevScripter new.
-	aScripter element: classCoderElement.
+	| aMethod aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget |
+	aMethod := DateAndTime >> #+.
 
-	aScripter click
-		label: 'Expand first method';
-		id: GtSourceCoderId index: 1;
-		play.
+	aClass := DateAndTime.
+	methodPosition := 1.
 
-	classCoderElement := aScripter elementWithoutParent.
-
+	classCoderElement := BlDevScripter new
+		                     element: (GtClassCoderLiveSlide new
+				                      class: aClass;
+				                      expandMethodAt: methodPosition) asElement;
+		                     elementWithoutParent.
 	expandedMethodElement := classCoderElement
-		allChildrenBreadthFirstDetect: [:aChild |
-			aChild isKindOf: BrInfiniteListElement]
-		ifFound: [:aChild | aChild childAt: 1].
-	
-	pragmaTarget := expandedMethodElement
-		allChildrenBreadthFirstDetect: [:aChild |
-			(aChild isKindOf: BrTextElementWithCursors) and: [aChild text asString = '<gtExample>' asString]]
-		ifFound: [:aChild | aChild].
-	
-	"buttonsList := expandedMethodElement
-		allChildrenBreadthFirstSelect: [:aChild | aChild isKindOf: BrButton].
+		                         allChildrenBreadthFirstDetect: [ :aChild | 
+		                         aChild isKindOf: BrInfiniteListElement ]
+		                         ifFound: [ :aChild | aChild childAt: 1 ].
+	selectorTarget := expandedMethodElement
+		                  allChildrenBreadthFirstDetect: [ :aChild | 
+			                  (aChild isKindOf: BrTextElementWithCursors) and: [ 
+				                  aChild text asString = '+' asString ] ]
+		                  ifFound: [ :aChild | aChild ].
 
-	evaluateTarget := expandedMethodElement childNamed: GtMethodCoderPlayExampleActionId.
-	inspectTarget := expandedMethodElement childNamed: GtMethodCoderPlayAndInspectExampleActionId.
-	debugTarget := expandedMethodElement childNamed: GtMethodCoderDebugExampleActionId."
+	operandTarget := expandedMethodElement
+		                 allChildrenBreadthFirstDetect: [ :aChild | 
+			                 (aChild isKindOf: BrTextElementWithCursors) and: [ 
+				                 aChild text asString = 'operand' asString ] ]
+		                 ifFound: [ :aChild | aChild ].
 
-	pragmaTarget
-		addChild:
-			((self yellowExplanationTargetCircleFor: #gtView)
-					relocate:
-						(2 @ pragmaTarget extent y / 2)).
+	selectorTarget addChild:
+		((self yellowExplanationTargetCircleFor: #selector) relocate:
+			 2 @ selectorTarget extent y / 2).
 
-	
-	^ classCoderElement.
+
+	operandTarget addChild:
+		((self yellowExplanationTargetCircleFor: #operand) relocate:
+			 2 @ operandTarget extent y / 2).
+
+
+
+	^ classCoderElement
 ]
 
 { #category : #accessing }

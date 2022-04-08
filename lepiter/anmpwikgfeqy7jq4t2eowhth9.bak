@@ -355,7 +355,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-06T16:57:40.794088+02:00"
+									"dateAndTimeString" : "2022-04-08T15:09:19.825483+02:00"
 								}
 							},
 							"uid" : {
@@ -365,7 +365,115 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "And see {{gtClass:name=GtExplainerExamples}}."
+							"string" : "See {{gtClass:name=GtExplainerExamples}} and {{gtClass:name=GtCoderSlideshow}} ."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:08:27.269474+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:08:40.94774+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "rCX5BoaYDQCfF6/+D5rEYQ=="
+							},
+							"code" : "GtLiveShow openInSpace:  GtCoderSlideshow"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:10:49.618837+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:15:52.310432+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "R1xpD4aYDQCfGoycD5rEYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "See especially {{gtMethod:name=GtCoderSlideshow>>#baselineMethodsExplanationSlideFor:}}. and {{gtMethod:name=GtCoderSlideshow>>#exampleMethodExplanationSlideFor:}}. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:11:12.59771+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T15:11:12.59771+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "5trTEIaYDQCfG2W8D5rEYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						}
 					]
 				},
@@ -732,7 +840,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-07T15:11:47.080587+02:00"
+												"dateAndTimeString" : "2022-04-07T17:47:50.659948+02:00"
 											}
 										},
 										"uid" : {
@@ -742,7 +850,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtPage:A gentle introduction to Pharo Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}} "
+										"string" : "{{gtPage:A gentle introduction to Pharo Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 									},
 									{
 										"__type" : "textSnippet",
@@ -769,7 +877,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-07T15:12:10.551829+02:00"
+												"dateAndTimeString" : "2022-04-07T17:47:52.594013+02:00"
 											}
 										},
 										"uid" : {
@@ -779,7 +887,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "{{gtPage:A gentle introduction to classes and methods in Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}} "
+										"string" : "{{gtPage:A gentle introduction to classes and methods in Smalltalk|db=2j9m7db2i4oz116bexd7wbdxo}}  "
 									}
 								]
 							},
