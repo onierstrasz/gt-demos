@@ -452,7 +452,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-08T15:11:12.59771+02:00"
+									"dateAndTimeString" : "2022-04-08T18:14:18.117721+02:00"
 								}
 							},
 							"editEmail" : {
@@ -463,7 +463,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-08T15:11:12.59771+02:00"
+									"dateAndTimeString" : "2022-04-08T18:14:25.041946+02:00"
 								}
 							},
 							"uid" : {
@@ -473,7 +473,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "Need to create methods t"
 						}
 					]
 				},
@@ -586,6 +586,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Smalltalk Syntax (the funny bits)]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T16:03:30.561591+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-08T16:03:30.561591+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "VWLdy4aYDQCaTl4+CHxeKw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",

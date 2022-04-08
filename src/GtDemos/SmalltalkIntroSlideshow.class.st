@@ -35,6 +35,18 @@ SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 ]
 
 { #category : #accessing }
+SmalltalkIntroSlideshow >> coderElementFor: aClass andMethodSelector: aSelector [
+
+	| position |
+	position := (aClass methods collect: #selector) sorted indexOf: aSelector.
+	^ BlDevScripter new
+		  element: (GtClassCoderLiveSlide new
+				   class: aClass;
+				   expandMethodAt: position) asElement;
+		  elementWithoutParent
+]
+
+{ #category : #accessing }
 SmalltalkIntroSlideshow >> dbName [
 	^ 'onierstrasz/gt-demos/lepiter'
 ]
@@ -137,25 +149,36 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 	"Adapted from GtCoderSlideshow"
 
 	<gtExample>
-	| aMethod aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget |
-	aMethod := DateAndTime >> #+.
-
+	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position |
+	
+	"TODO factor the following into methods.
+	How to avoid duplicating code or computations?"
+	
 	aClass := DateAndTime.
-	methodPosition := 1.
+	aSelector := #+.
 
-	classCoderElement := BlDevScripter new
-		                     element: (GtClassCoderLiveSlide new
-				                      class: aClass;
-				                      expandMethodAt: methodPosition) asElement;
-		                     elementWithoutParent.
+	classCoderElement := self
+		                     coderElementFor: aClass
+		                     andMethodSelector: aSelector.
+
+		                     
+	position := (aClass methods collect: #selector) sorted indexOf:
+		            aSelector.
 	expandedMethodElement := classCoderElement
 		                         allChildrenBreadthFirstDetect: [ :aChild | 
 		                         aChild isKindOf: BrInfiniteListElement ]
-		                         ifFound: [ :aChild | aChild childAt: 1 ].
-		                         
-	selectorTarget := self findTargetWithText: '+' in: expandedMethodElement.
-	operandTarget := self findTargetWithText: 'operand' in: expandedMethodElement.
-	temporaryTarget := self findTargetWithText: 'durationTicks' in: expandedMethodElement.
+		                         ifFound: [ :aChild | 
+		                         aChild childAt: position ].
+
+	selectorTarget := self
+		                  findTargetWithText: '+'
+		                  in: expandedMethodElement.
+	operandTarget := self
+		                 findTargetWithText: 'operand'
+		                 in: expandedMethodElement.
+	temporaryTarget := self
+		                   findTargetWithText: 'durationTicks'
+		                   in: expandedMethodElement.
 
 	self addTargetCircleFor: selectorTarget named: #selector.
 	self addTargetCircleFor: operandTarget named: #operand.
