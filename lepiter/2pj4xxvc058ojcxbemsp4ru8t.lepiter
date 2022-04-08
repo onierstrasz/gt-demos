@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T18:19:28.573637+02:00"
+						"dateAndTimeString" : "2022-04-08T10:08:44.092041+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "See {{gtPage:Fix the terrible Smalltalk syntax on a postcard example!|db=cqvjoxfnf6zd764ibqa67pln6}}"
+				"string" : "See {{gtPage:Fix the terrible Smalltalk syntax on a postcard example!|db=cqvjoxfnf6zd764ibqa67pln6}} "
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T18:19:29.010078+02:00"
+						"dateAndTimeString" : "2022-04-08T12:11:10.43267+02:00"
 					}
 				},
 				"editEmail" : {
@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T18:19:29.010078+02:00"
+						"dateAndTimeString" : "2022-04-08T12:11:31.661521+02:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Maybe we can use {{gtMethod:name=DateAndTime>>#+}} as an example method."
 			},
 			{
 				"__type" : "textSnippet",
