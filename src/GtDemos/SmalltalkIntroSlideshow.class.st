@@ -65,7 +65,7 @@ SmalltalkIntroSlideshow >> imageChanges: aSlide [
 	^ aSlide textAndElement
 		  elementWeight: 0.50;
 		  priority: (self priorityFor: #imageChanges:);
-		  newTextWithFormat: ('Smalltalk is a live programming system. Objects live inside an image runninvg on a VM. Changes to classes and methods are logged as you program.' asRopedText
+		  newTextWithFormat: ('Smalltalk is a live programming system. Objects live inside an image running on a VM. Changes to classes and methods are logged as you program.' asRopedText
 				   glamorousRegularFont;
 				   fontSize: 30);
 		  element: [ 
@@ -80,6 +80,92 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #messages:);
 		  pageNamed: 'Three kinds of messages' from: self dbName
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> methodSyntax: aSlide [
+	<gtSlide>
+	^ aSlide textAndElement
+		  priority: (self priorityFor: #methodSyntax:);
+		  newTextWithFormat: self methodSyntaxExplanation;
+		  element: [ self methodSyntaxWithLinks ];
+		  elementWeight: 0.6
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> methodSyntaxExplanation [
+
+	"Adapted from GtCoderSlideshow"
+
+	| text |
+	text := 'PLACEHOLDER TO BE FIXED
+
+Also, if a method is annotated with the ' asRopedText
+	        , ('gtExample' asRopedText glamorousExplanationFor: #gtView)
+	        ,
+		        ' pragma, the coder offers you additional buttons similar to the ones in the playground.'
+			        asRopedText.
+
+	^ text asRopedText
+		  glamorousRegularFont;
+		  fontSize: 20
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
+	"Adapted from GtCoderSlideshow"
+	<gtExample>
+	| classCoderElement pragmaTarget inspectTarget evaluateTarget debugTarget aScripter expandedMethodElement buttonsList |
+	
+	classCoderElement := (GtInspector createOn:(GtPharoBehaviorCoder forClass: GtABAddressBookExample)) maximized.
+	
+	aScripter := BlDevScripter new.
+	aScripter element: classCoderElement.
+
+	aScripter click
+		label: 'Expand first method';
+		id: GtSourceCoderId index: 1;
+		play.
+
+	classCoderElement := aScripter elementWithoutParent.
+
+	expandedMethodElement := classCoderElement
+		allChildrenBreadthFirstDetect: [:aChild |
+			aChild isKindOf: BrInfiniteListElement]
+		ifFound: [:aChild | aChild childAt: 1].
+	pragmaTarget := expandedMethodElement
+		allChildrenBreadthFirstDetect: [:aChild |
+			(aChild isKindOf: BrTextElementWithCursors) and: [aChild text asString = '<gtExample>' asString]]
+		ifFound: [:aChild | aChild].
+	buttonsList := expandedMethodElement
+		allChildrenBreadthFirstSelect: [:aChild | aChild isKindOf: BrButton].
+
+	evaluateTarget := expandedMethodElement childNamed: GtMethodCoderPlayExampleActionId.
+	inspectTarget := expandedMethodElement childNamed: GtMethodCoderPlayAndInspectExampleActionId.
+	debugTarget := expandedMethodElement childNamed: GtMethodCoderDebugExampleActionId.
+
+	pragmaTarget
+		addChild:
+			((self yellowExplanationTargetCircleFor: #gtView)
+					relocate:
+						(2 @ pragmaTarget extent y / 2)).
+	evaluateTarget
+		addChild:
+			((self yellowExplanationTargetCircleFor: #evaluateButton)
+					relocate:
+						(2 @ evaluateTarget extent y / 2)).
+	inspectTarget
+		addChild:
+			((self yellowExplanationTargetCircleFor: #inspectButton)
+					relocate:
+						(2 @ inspectTarget extent y / 2)).
+	debugTarget
+		addChild:
+			((self yellowExplanationTargetCircleFor: #debugButton)
+					relocate:
+						(2 @ debugTarget extent y / 2)).
+	
+	^ classCoderElement.
 ]
 
 { #category : #accessing }
@@ -113,6 +199,7 @@ SmalltalkIntroSlideshow >> priorities [
 		everythingIsAnObject:
 		everythingHappensBySendingMessages:
 		syntax:
+		methodSyntax:
 		messages:
 		scriptingInThePlayground:
 		programmingClassesAndMethods:
@@ -198,4 +285,15 @@ SmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
 	"<gtSlide>"
 	^ aSlide world
 		  priority: (self priorityFor: #worldExampleSlideFor:)
+]
+
+{ #category : #accessing }
+SmalltalkIntroSlideshow >> yellowExplanationTargetCircleFor: aModel [
+	"Copied from GtCoderSlideshow"
+	^ BrButton new
+				constraintsDo: [ :c | c ignoreByLayout ];
+				size: 0 @ 0;
+				elevation: (BlRelativeElevation elevation: 10);
+				geometry: BlCircleGeometry new;
+				aptitude: (GtExplainerTargetAptitude new explanationModel: aModel).
 ]
