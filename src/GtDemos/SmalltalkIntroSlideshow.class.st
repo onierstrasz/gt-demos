@@ -22,7 +22,7 @@ SmalltalkIntroSlideshow >> addTargetCircleFor: aTarget named: aSymbol [
 
 	aTarget addChild:
 		((self yellowExplanationTargetCircleFor: aSymbol) relocate:
-			 2 @ aTarget extent y / 2)
+			 2 @ aTarget extent y / 2 )
 ]
 
 { #category : #slides }
@@ -142,7 +142,7 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 	"Adapted from GtCoderSlideshow"
 
 	<gtExample>
-	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position pragmaTarget commentTarget cascadeTarget separatorTarget returnTarget |
+	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position pragmaTarget commentTarget cascadeTarget separatorTarget returnTarget circle |
 	aClass := XdClient.
 	aSelector := #deleteId:.
 
@@ -158,6 +158,7 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 		                         aChild isKindOf: BrInfiniteListElement ]
 		                         ifFound: [ :aChild | 
 		                         aChild childAt: position ].
+
 
 	selectorTarget := self
 		                  findTargetWithText: 'deleteId:'
@@ -189,7 +190,12 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 	self addTargetCircleFor: pragmaTarget named: #pragma.
 	self addTargetCircleFor: commentTarget named: #comment.
 	self addTargetCircleFor: temporaryTarget named: #temporary.
-	self addTargetCircleFor: cascadeTarget named: #cascade.
+
+	circle := self yellowExplanationTargetCircleFor: #cascade.
+	cascadeTarget addChild: (circle relocate: 36 @ 9).
+
+	"{  circle . cascadeTarget } inspect."
+
 	self addTargetCircleFor: separatorTarget named: #separator.
 	self addTargetCircleFor: returnTarget named: #return.
 
