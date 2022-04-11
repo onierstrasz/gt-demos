@@ -35,18 +35,6 @@ SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> coderElementFor: aClass andMethodSelector: aSelector [
-
-	| position |
-	position := (aClass methods collect: #selector) sorted indexOf: aSelector.
-	^ BlDevScripter new
-		  element: (GtClassCoderLiveSlide new
-				   class: aClass;
-				   expandMethodAt: position) asElement;
-		  elementWithoutParent
-]
-
-{ #category : #accessing }
 SmalltalkIntroSlideshow >> dbName [
 	^ 'onierstrasz/gt-demos/lepiter'
 ]
@@ -128,14 +116,19 @@ SmalltalkIntroSlideshow >> methodSyntaxExplanation [
 
 	| text |
 	text := 'PLACEHOLDER TO BE FIXED
-Here is the ' asRopedText
-	        ,
-	        ('method selector' asRopedText glamorousExplanationFor:
-		         #selector) , ' and its' asRopedText
-	        , ('operand' asRopedText glamorousExplanationFor: #operand),
+' asRopedText,
 	        
-	        'Here''s a ' asRopedText,
-	        ('temporary' asRopedText glamorousExplanationFor: #temporary)
+
+'XXX' asRopedText, ('selector' asRopedText glamorousExplanationFor: #selector),
+'XXX' asRopedText, ('operand' asRopedText glamorousExplanationFor: #operand),
+'XXX' asRopedText, ('pragma' asRopedText glamorousExplanationFor: #pragma),
+'XXX' asRopedText, ('comment' asRopedText glamorousExplanationFor: #comment),
+'XXX' asRopedText, ('temporary' asRopedText glamorousExplanationFor: #temporary),
+'XXX' asRopedText, ('cascade' asRopedText glamorousExplanationFor: #cascade),
+
+'XXX' asRopedText, ('statement separator' asRopedText glamorousExplanationFor: #separator),
+'XXX' asRopedText, ('return' asRopedText glamorousExplanationFor: #return)
+
 	        .
 
 	^ text asRopedText
@@ -149,21 +142,17 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 	"Adapted from GtCoderSlideshow"
 
 	<gtExample>
-	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position |
-	
-	"TODO factor the following into methods.
-	How to avoid duplicating code or computations?"
-	
-	aClass := DateAndTime.
-	aSelector := #+.
+	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position pragmaTarget commentTarget cascadeTarget separatorTarget returnTarget |
+	aClass := XdClient.
+	aSelector := #deleteId:.
 
-	classCoderElement := self
-		                     coderElementFor: aClass
-		                     andMethodSelector: aSelector.
-
-		                     
 	position := (aClass methods collect: #selector) sorted indexOf:
 		            aSelector.
+	classCoderElement := BlDevScripter new
+		                     element: (GtClassCoderLiveSlide new
+				                      class: aClass;
+				                      expandMethodAt: position) asElement;
+		                     elementWithoutParent.
 	expandedMethodElement := classCoderElement
 		                         allChildrenBreadthFirstDetect: [ :aChild | 
 		                         aChild isKindOf: BrInfiniteListElement ]
@@ -171,18 +160,38 @@ SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
 		                         aChild childAt: position ].
 
 	selectorTarget := self
-		                  findTargetWithText: '+'
+		                  findTargetWithText: 'deleteId:'
 		                  in: expandedMethodElement.
 	operandTarget := self
-		                 findTargetWithText: 'operand'
+		                 findTargetWithText: 'anId'
+		                 in: expandedMethodElement.
+	pragmaTarget := self
+		                findTargetWithText: '<return:'
+		                in: expandedMethodElement.
+	commentTarget := self
+		                 findTargetWithText: '"Delete'
 		                 in: expandedMethodElement.
 	temporaryTarget := self
-		                   findTargetWithText: 'durationTicks'
+		                   findTargetWithText: 'aCommand'
 		                   in: expandedMethodElement.
+	cascadeTarget := self
+		                 findTargetWithText: 'self;'
+		                 in: expandedMethodElement.
+	separatorTarget := self
+		                   findTargetWithText: '.'
+		                   in: expandedMethodElement.
+	returnTarget := self
+		                findTargetWithText: '^'
+		                in: expandedMethodElement.
 
 	self addTargetCircleFor: selectorTarget named: #selector.
 	self addTargetCircleFor: operandTarget named: #operand.
+	self addTargetCircleFor: pragmaTarget named: #pragma.
+	self addTargetCircleFor: commentTarget named: #comment.
 	self addTargetCircleFor: temporaryTarget named: #temporary.
+	self addTargetCircleFor: cascadeTarget named: #cascade.
+	self addTargetCircleFor: separatorTarget named: #separator.
+	self addTargetCircleFor: returnTarget named: #return.
 
 	^ classCoderElement
 ]
