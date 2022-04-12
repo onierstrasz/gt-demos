@@ -717,7 +717,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:34.935679+02:00"
+									"dateAndTimeString" : "2022-04-12T09:07:42.327568+02:00"
 								}
 							},
 							"uid" : {
@@ -754,7 +754,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T14:10:38.236583+02:00"
+									"dateAndTimeString" : "2022-04-12T09:52:35.810911+02:00"
 								}
 							},
 							"uid" : {
@@ -767,7 +767,7 @@
 							"string" : "Maybe use {{gtMethod:name=BlElementVectorGeometry>>#containsPoint:in:on:}}  "
 						},
 						{
-							"__type" : "textSnippet",
+							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -780,7 +780,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:35.385987+02:00"
+									"dateAndTimeString" : "2022-04-12T09:48:39.26969+02:00"
 								}
 							},
 							"editEmail" : {
@@ -791,17 +791,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:35.385987+02:00"
+									"dateAndTimeString" : "2022-04-12T09:52:08.852269+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "v7s3asGYDQCj9UmRALU7XQ=="
+								"uidString" : "WgGlBtKYDQCrkV1BDHhuzg=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
+							"code" : "GtPharoSyntaxExplainer new forMethod: (BlElementVectorGeometry>>#containsPoint:in:on:)"
 						}
 					]
 				},

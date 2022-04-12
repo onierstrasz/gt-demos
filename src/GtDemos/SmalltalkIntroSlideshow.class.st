@@ -101,105 +101,17 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> methodSyntax: aSlide [
+
 	<gtSlide>
 	^ aSlide textAndElement
 		  priority: (self priorityFor: #methodSyntax:);
-		  newTextWithFormat: self methodSyntaxExplanation;
-		  element: [ self methodSyntaxWithLinks ];
+		  newTextWithFormat: ('PLACEHOLDER' asRopedText
+				   glamorousRegularFont;
+				   fontSize: 30);
+		  element: [ 
+			  GtPharoSyntaxExplainer new forMethod:
+				  BlElementVectorGeometry >> #containsPoint:in:on: ];
 		  elementWeight: 0.6
-]
-
-{ #category : #accessing }
-SmalltalkIntroSlideshow >> methodSyntaxExplanation [
-
-	"Adapted from GtCoderSlideshow"
-
-	| text |
-	text := 'PLACEHOLDER TO BE FIXED
-' asRopedText,
-	        
-
-'XXX' asRopedText, ('selector' asRopedText glamorousExplanationFor: #selector),
-'XXX' asRopedText, ('operand' asRopedText glamorousExplanationFor: #operand),
-'XXX' asRopedText, ('pragma' asRopedText glamorousExplanationFor: #pragma),
-'XXX' asRopedText, ('comment' asRopedText glamorousExplanationFor: #comment),
-'XXX' asRopedText, ('temporary' asRopedText glamorousExplanationFor: #temporary),
-'XXX' asRopedText, ('cascade' asRopedText glamorousExplanationFor: #cascade),
-
-'XXX' asRopedText, ('statement separator' asRopedText glamorousExplanationFor: #separator),
-'XXX' asRopedText, ('return' asRopedText glamorousExplanationFor: #return)
-
-	        .
-
-	^ text asRopedText
-		  glamorousRegularFont;
-		  fontSize: 20
-]
-
-{ #category : #accessing }
-SmalltalkIntroSlideshow >> methodSyntaxWithLinks [
-
-	"Adapted from GtCoderSlideshow"
-
-	<gtExample>
-	| aClass methodPosition classCoderElement expandedMethodElement selectorTarget operandTarget temporaryTarget aSelector position pragmaTarget commentTarget cascadeTarget separatorTarget returnTarget circle |
-	aClass := XdClient.
-	aSelector := #deleteId:.
-
-	position := (aClass methods collect: #selector) sorted indexOf:
-		            aSelector.
-	classCoderElement := BlDevScripter new
-		                     element: (GtClassCoderLiveSlide new
-				                      class: aClass;
-				                      expandMethodAt: position) asElement;
-		                     elementWithoutParent.
-	expandedMethodElement := classCoderElement
-		                         allChildrenBreadthFirstDetect: [ :aChild | 
-		                         aChild isKindOf: BrInfiniteListElement ]
-		                         ifFound: [ :aChild | 
-		                         aChild childAt: position ].
-
-
-	selectorTarget := self
-		                  findTargetWithText: 'deleteId:'
-		                  in: expandedMethodElement.
-	operandTarget := self
-		                 findTargetWithText: 'anId'
-		                 in: expandedMethodElement.
-	pragmaTarget := self
-		                findTargetWithText: '<return:'
-		                in: expandedMethodElement.
-	commentTarget := self
-		                 findTargetWithText: '"Delete'
-		                 in: expandedMethodElement.
-	temporaryTarget := self
-		                   findTargetWithText: 'aCommand'
-		                   in: expandedMethodElement.
-	cascadeTarget := self
-		                 findTargetWithText: 'self;'
-		                 in: expandedMethodElement.
-	separatorTarget := self
-		                   findTargetWithText: '.'
-		                   in: expandedMethodElement.
-	returnTarget := self
-		                findTargetWithText: '^'
-		                in: expandedMethodElement.
-
-	self addTargetCircleFor: selectorTarget named: #selector.
-	self addTargetCircleFor: operandTarget named: #operand.
-	self addTargetCircleFor: pragmaTarget named: #pragma.
-	self addTargetCircleFor: commentTarget named: #comment.
-	self addTargetCircleFor: temporaryTarget named: #temporary.
-
-	circle := self yellowExplanationTargetCircleFor: #cascade.
-	cascadeTarget addChild: (circle relocate: 36 @ 9).
-
-	"{  circle . cascadeTarget } inspect."
-
-	self addTargetCircleFor: separatorTarget named: #separator.
-	self addTargetCircleFor: returnTarget named: #return.
-
-	^ classCoderElement
 ]
 
 { #category : #accessing }
@@ -233,8 +145,8 @@ SmalltalkIntroSlideshow >> priorities [
 		everythingIsAnObject:
 		everythingHappensBySendingMessages:
 		syntax:
-		methodSyntax:
 		messages:
+		methodSyntax:
 		scriptingInThePlayground:
 		programmingClassesAndMethods:
 		bouncingAtoms:
