@@ -377,154 +377,7 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T09:22:25.35538+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T09:22:45.042105+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "CDlW5PmYDQCpliIQAgIUYQ=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "```language=text\ninitialize\r\tvalue := OrderedCollection new\n```"
-									}
-								]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:11:02.28536+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:21:08.593565+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ls+4u/mYDQCpjt9HAgIUYQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Let's browse the class and initialize the slot to an {{gtClass:name=OrderedCollection}}. (Click on the `Meta` tab.)"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:23:17.344874+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:23:47.759017+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "lgvJ5fmYDQCpmNBzAgIUYQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Now we can view the machine, but its state is empty."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:23:35.528886+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:27:34.039906+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "0X2y6PmYDQCpmp2sAgIUYQ=="
-							},
-							"code" : "StackMachine new "
-						}
-					]
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -545,7 +398,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T09:59:53.921427+02:00"
+						"dateAndTimeString" : "2022-04-14T09:59:49.599442+02:00"
 					}
 				},
 				"uid" : {
@@ -555,7 +408,82 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Implementing the initialize method"
+				"string" : "#Implementing"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T09:22:25.35538+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T09:22:45.042105+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "CDlW5PmYDQCpliIQAgIUYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "```language=text\ninitialize\r\tvalue := OrderedCollection new\n```"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T09:11:02.28536+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T09:21:08.593565+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ls+4u/mYDQCpjt9HAgIUYQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Let's browse the class and initialize the slot to an {{gtClass:name=OrderedCollection}}. (Click on the `Meta` tab.)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -571,7 +499,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T10:00:06.607657+02:00"
+						"dateAndTimeString" : "2022-04-14T09:23:17.344874+02:00"
 					}
 				},
 				"editEmail" : {
@@ -582,20 +510,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T10:00:06.607657+02:00"
+						"dateAndTimeString" : "2022-04-14T09:23:47.759017+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SbNLa/qYDQCptVxcAgIUYQ=="
+					"uidString" : "lgvJ5fmYDQCpmNBzAgIUYQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Now we can view the machine, but its state is empty."
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -608,7 +536,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T10:00:07.021339+02:00"
+						"dateAndTimeString" : "2022-04-14T09:23:35.528886+02:00"
 					}
 				},
 				"editEmail" : {
@@ -619,17 +547,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T10:00:07.021339+02:00"
+						"dateAndTimeString" : "2022-04-14T09:27:34.039906+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WwNSa/qYDQCptp4/AgIUYQ=="
+					"uidString" : "0X2y6PmYDQCpmp2sAgIUYQ=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
+				"code" : "StackMachine new "
 			},
 			{
 				"__type" : "textSnippet",

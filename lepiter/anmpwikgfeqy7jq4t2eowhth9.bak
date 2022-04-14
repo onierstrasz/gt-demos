@@ -490,7 +490,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:30:27.480291+02:00"
+									"dateAndTimeString" : "2022-04-14T08:20:10.431049+02:00"
 								}
 							},
 							"editEmail" : {
@@ -501,455 +501,18 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:32:46.059154+02:00"
+									"dateAndTimeString" : "2022-04-14T08:20:27.642313+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "aBGKpr2YDQCqLRn9BxfMWg=="
+								"uidString" : "ahalBfmYDQCpIVhzAgIUYQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Need a method with at leat one argument, a pragma, a comment, temporaries, a statement separator, a cascade, an assignment, and a return."
+							"string" : "Prepare a coding example. Maybe a stack machine. "
 						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:30:35.743172+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:41:55.527423+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "31M4qL2YDQCqL9wJBxfMWg=="
-							},
-							"code" : "((Object withAllSubclasses flatCollect: #methodDict) select: [ :each | \r\t ((((((each hasPragma and: [ each ast statements size > 1 ]) and: [ \r\t\t      each hasComment ]) and: [ \r\t\t     (each sendNodes select: #isCascaded) isNotEmpty ]) and: [ \r\t\t    each argumentNames isNotEmpty ]) and: [ \r\t\t   (each ast allChildren select: #isReturn) isNotEmpty ]) and: [ \r\t\t  (each ast allChildren select: #isAssignment) isNotEmpty ]) and: [ \r\t\t each ast temporaries isNotEmpty ] ]) sort: [ :a :b | \r\ta linesOfCode < b linesOfCode ]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:42:00.60921+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:42:25.421529+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "hhTx0L2YDQCqRtCMBxfMWg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "The shortest method that works is {{gtMethod:name=XdClient>>#deleteId:}}. "
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:56:05.692694+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:56:06.353416+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "XhG4XcGYDQCj4m9DALU7XQ=="
-							},
-							"code" : "GtPharoSyntaxExplainer new forMethod: (XdClient>>#deleteId:)"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:56:44.422922+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:56:56.25922+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "ZXXfX8GYDQCj5OETALU7XQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "From the Syntax Explainer view of compiled methods"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:57:18.893446+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:57:57.551254+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "uxbBYMGYDQCj5cvmALU7XQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "See also {{gtMethod:name=GtInspectorViews>>listViewExplanationSlideFor:}} "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:32.066329+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:07:42.327568+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "0DUAasGYDQCj8f6KALU7XQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Also see {{gtPage:Playing with Parsers in SmaCC - Show|db=2j9m7db2i4oz116bexd7wbdxo}} "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T14:10:30.863303+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:46:23.052941+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "rn7gkMGYDQCj+IyPALU7XQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Maybe use {{gtMethod:name=BlElementVectorGeometry>>#containsPoint:in:on:}}  "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:35.385987+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:59:35.385987+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "v7s3asGYDQCj9UmRALU7XQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-11T09:29:58.549565+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-11T09:30:06.543442+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Cz5ZOF+YDQCYLPErCQdxzw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#Need a good example method"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:49:43.513385+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:49:43.513385+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "S0l5CtKYDQCrlug7DHhuzg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:48:39.26969+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-12T09:52:08.852269+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "WgGlBtKYDQCrkV1BDHhuzg=="
-							},
-							"code" : "GtPharoSyntaxExplainer new forMethod: (BlElementVectorGeometry>>#containsPoint:in:on:)"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-12T09:45:30.214376+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-12T09:52:19.875032+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Tcgd+9GYDQCri/+EDHhuzg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -975,7 +538,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-07T16:27:46.997512+02:00"
+									"dateAndTimeString" : "2022-04-14T08:20:00.464927+02:00"
 								}
 							},
 							"uid" : {
@@ -985,44 +548,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Smalltalk Syntax (the funny bits)]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T09:43:09.968489+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-11T13:56:30.426927+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "VWLdy4aYDQCaTl4+CHxeKw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "{{gtMethod:name=SmalltalkIntroSlideshow>>#methodSyntaxExplanation}}  "
+							"string" : "[[Smalltalk Syntax (the funny bits)]] "
 						},
 						{
 							"__type" : "textSnippet",
@@ -1577,6 +1103,368 @@
 					"__type" : "textStyle"
 				},
 				"string" : "##What's special about GT?"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T09:30:27.480291+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T08:19:08.439506+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "aBGKpr2YDQCqLRn9BxfMWg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Needed a method with at least one argument, a pragma, a comment, temporaries, a statement separator, a cascade, an assignment, and a return."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T09:30:35.743172+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T09:41:55.527423+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "31M4qL2YDQCqL9wJBxfMWg=="
+							},
+							"code" : "((Object withAllSubclasses flatCollect: #methodDict) select: [ :each | \r\t ((((((each hasPragma and: [ each ast statements size > 1 ]) and: [ \r\t\t      each hasComment ]) and: [ \r\t\t     (each sendNodes select: #isCascaded) isNotEmpty ]) and: [ \r\t\t    each argumentNames isNotEmpty ]) and: [ \r\t\t   (each ast allChildren select: #isReturn) isNotEmpty ]) and: [ \r\t\t  (each ast allChildren select: #isAssignment) isNotEmpty ]) and: [ \r\t\t each ast temporaries isNotEmpty ] ]) sort: [ :a :b | \r\ta linesOfCode < b linesOfCode ]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T09:42:00.60921+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T09:42:25.421529+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hhTx0L2YDQCqRtCMBxfMWg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "The shortest method that works is {{gtMethod:name=XdClient>>#deleteId:}}. "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:56:05.692694+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:56:06.353416+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "XhG4XcGYDQCj4m9DALU7XQ=="
+							},
+							"code" : "GtPharoSyntaxExplainer new forMethod: (XdClient>>#deleteId:)"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:56:44.422922+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:56:56.25922+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZXXfX8GYDQCj5OETALU7XQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "From the Syntax Explainer view of compiled methods"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:57:18.893446+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:57:57.551254+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "uxbBYMGYDQCj5cvmALU7XQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "See also {{gtMethod:name=GtInspectorViews>>listViewExplanationSlideFor:}} "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T13:59:32.066329+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-12T09:07:42.327568+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0DUAasGYDQCj8f6KALU7XQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Also see {{gtPage:Playing with Parsers in SmaCC - Show|db=2j9m7db2i4oz116bexd7wbdxo}} "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-11T14:10:30.863303+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-12T09:52:35.810911+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "rn7gkMGYDQCj+IyPALU7XQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Maybe use {{gtMethod:name=BlElementVectorGeometry>>#containsPoint:in:on:}}  "
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-12T09:48:39.26969+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-12T09:52:08.852269+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WgGlBtKYDQCrkV1BDHhuzg=="
+							},
+							"code" : "GtPharoSyntaxExplainer new forMethod: (BlElementVectorGeometry>>#containsPoint:in:on:)"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-11T09:29:58.549565+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T08:19:38.077987+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Cz5ZOF+YDQCYLPErCQdxzw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#How to find a good example method (done)"
 			}
 		]
 	},
