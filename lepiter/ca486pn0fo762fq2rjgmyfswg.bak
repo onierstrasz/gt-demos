@@ -8,266 +8,7 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T17:13:46.190917+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:56.672896+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "5Xqvil+YDQCYVT2qCQdxzw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[todo]]  -- add the ombu files"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:56.865943+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:56.865943+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "sBwXyv6YDQCtMd8FDI85xw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:47.724855+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:47.724855+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "XaGLyf6YDQCtEU4CDI85xw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:42.441122+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:42.441122+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "vwE7yf6YDQCtEOm0DI85xw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:36.547459+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:36.547459+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "nhPhyP6YDQCtDujkDI85xw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:36.785278+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:12:36.785278+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mLTkyP6YDQCtDwVgDI85xw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
 					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:09:45.889207+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:09:55.788408+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "kn4ot/mYDQCpiKwkAgIUYQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "We would like to implement a simple stack machine."
-						},
 						{
 							"__type" : "textSnippet",
 							"children" : {
@@ -304,6 +45,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "A stack machine is a simple model of a computer in which operations are performed on a stack."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T09:09:45.889207+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T09:09:55.788408+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "kn4ot/mYDQCpiKwkAgIUYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "We would like to implement a simple stack machine."
 						}
 					]
 				},
@@ -503,7 +281,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.124338+02:00"
+									"dateAndTimeString" : "2022-04-14T17:32:53.992641+02:00"
 								}
 							},
 							"editEmail" : {
@@ -514,44 +292,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.124338+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "T3zHiP6YDQCs1dCaDI85xw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.475212+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.475212+02:00"
+									"dateAndTimeString" : "2022-04-14T17:34:11.605951+02:00"
 								}
 							},
 							"uid" : {
@@ -561,7 +302,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "NB: For each of the code changes we will make, we can either implement them directly, or we can load the change snippets, such as the following one, by clicking on the checkmark."
 						},
 						{
 							"__type" : "changesSnippet",
@@ -596,7 +337,7 @@
 								"uidString" : "FLYUif6YDQCs2LQcDI85xw=="
 							},
 							"previewHeight" : 200,
-							"fileName" : ""
+							"fileName" : "attachments/6cwa84k7r7y7dczvcu0zu8mhg/StackMachineClassDef.ombu"
 						},
 						{
 							"__type" : "textSnippet",
@@ -612,7 +353,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.760109+02:00"
+									"dateAndTimeString" : "2022-04-14T17:34:37.12912+02:00"
 								}
 							},
 							"editEmail" : {
@@ -623,7 +364,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T14:54:41.760109+02:00"
+									"dateAndTimeString" : "2022-04-14T17:34:47.703599+02:00"
 								}
 							},
 							"uid" : {
@@ -633,7 +374,41 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : ""
+							"string" : "Let's try creating an instance again:"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:34:49.850547+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:34:52.396149+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "zvKAxQCZDQCg11W/Dvxlaw=="
+							},
+							"code" : "StackMachine new "
 						},
 						{
 							"__type" : "textSnippet",
@@ -660,7 +435,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:20:56.947384+02:00"
+									"dateAndTimeString" : "2022-04-14T17:34:55.853626+02:00"
 								}
 							},
 							"uid" : {
@@ -670,7 +445,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "The object exists, but the `value` slot has not been initialized. (See the `Raw` tab.)"
+							"string" : "The object exists now, but the `value` slot has not been initialized. (See the `Raw` tab.)"
 						}
 					]
 				},
@@ -716,7 +491,7 @@
 								"__type" : "snippets",
 								"items" : [
 									{
-										"__type" : "textSnippet",
+										"__type" : "changesSnippet",
 										"children" : {
 											"__type" : "snippets",
 											"items" : [ ]
@@ -729,7 +504,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T09:22:25.35538+02:00"
+												"dateAndTimeString" : "2022-04-14T17:42:42.739273+02:00"
 											}
 										},
 										"editEmail" : {
@@ -740,17 +515,15 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T09:22:45.042105+02:00"
+												"dateAndTimeString" : "2022-04-14T17:42:42.739273+02:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "CDlW5PmYDQCpliIQAgIUYQ=="
+											"uidString" : "Y6iw4QCZDQCg2IFNDvxlaw=="
 										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "```language=text\ninitialize\r\tvalue := OrderedCollection new\n```"
+										"previewHeight" : 200,
+										"fileName" : "attachments/6cwa84nq27sxcbculams0d39v/initializeMethod.ombu"
 									}
 								]
 							},
@@ -810,7 +583,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:23:47.759017+02:00"
+									"dateAndTimeString" : "2022-04-14T17:45:04.107539+02:00"
 								}
 							},
 							"uid" : {
@@ -820,7 +593,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Now we can view the machine, but its state is empty."
+							"string" : "Now we can view the machine, but its state is empty. (Go back to the `Boxes` tab.)"
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -1001,6 +774,41 @@
 								"uidString" : "7AdJ9vmYDQCpoWxxAgIUYQ=="
 							},
 							"code" : "StackMachine new empty "
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:45:25.930229+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:45:25.930229+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "EcFq6wCZDQCg3oSTDvxlaw=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/6cwa84lsqn79lutyqakczdr98/emptyEg.ombu"
 						}
 					]
 				},
@@ -1110,6 +918,41 @@
 								"uidString" : "2YB4/vmYDQCporATAgIUYQ=="
 							},
 							"code" : "StackMachine new pushed1  "
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:46:56.080804+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:46:56.080804+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "x1fK8ACZDQCg4KWDDvxlaw=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/6cwa84o8r539bxkza5t1zkchn/pushMethod.ombu"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1255,6 +1098,41 @@
 								"uidString" : "blA9RPqYDQCprlpMAgIUYQ=="
 							},
 							"code" : "StackMachine new push1andPop "
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:48:50.297217+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:48:50.297217+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "pyWZ9wCZDQCg4tJkDvxlaw=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/6cwa84mwgxyo47gi61z5htr3l/popMethod.ombu"
 						}
 					]
 				},
@@ -1475,6 +1353,41 @@
 							"code" : "StackMachine new pushed1and2 "
 						},
 						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:51:00.245503+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:51:00.245503+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "IwBY/wCZDQCg5d56Dvxlaw=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/6cwa84m50iztzyf9cs9oaoewd/push1and2.ombu"
+						},
+						{
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
@@ -1544,6 +1457,41 @@
 								"uidString" : "NMygP/qYDQCpqmweAgIUYQ=="
 							},
 							"code" : "StackMachine new add1and2 "
+						},
+						{
+							"__type" : "changesSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:52:20.059223+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T17:52:20.059223+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ctwZBAGZDQCg6hjSDvxlaw=="
+							},
+							"previewHeight" : 200,
+							"fileName" : "attachments/6cwa84n2xiag9qkg35qrvnsqv/addMethod.ombu"
 						}
 					]
 				},
