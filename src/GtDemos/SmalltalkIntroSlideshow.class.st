@@ -68,9 +68,10 @@ SmalltalkIntroSlideshow >> findTargetWithText: aText in: expandedMethodElement [
 SmalltalkIntroSlideshow >> gtWorld: aSlide [
 	<gtSlide>
 	^ aSlide textAndElement
-		  elementWeight: 0.60;
+		  elementWeight: 0.6;
 		  priority: (self priorityFor: #gtWorld:);
-		  newTextWithFormat: ('Glamorous Toolkit is a “moldable” development environment with native windows, software analysis support, and a visualization engine. Gt is built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
+		  newTextWithFormat: ('Glamorous Toolkit is a “moldable” development environment with native windows, software analysis tools, and a visualization engine. 
+Gt is built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
 				   glamorousRegularFont;
 				   fontSize: 30);
 		  element: [ aSlide world ]
@@ -82,9 +83,11 @@ SmalltalkIntroSlideshow >> imageChanges: aSlide [
 	^ aSlide textAndElement
 		  elementWeight: 0.50;
 		  priority: (self priorityFor: #imageChanges:);
-		  newTextWithFormat: ('Smalltalk is a live programming system. Objects live inside an image running on a VM. Changes to classes and methods are logged as you program.' asRopedText
+		  newTextWithFormat: ('Smalltalk is a live programming system.
+Objects live inside an image running on a VM. 
+Changes to classes and methods are logged as you program.' asRopedText
 				   glamorousRegularFont;
-				   fontSize: 30);
+				   fontSize: 40);
 		  element: [ 
 			  GtFilePictureLiveSlide new fileReference:
 					  (GtResourcesUtility resourceAtPath:
@@ -120,15 +123,14 @@ SmalltalkIntroSlideshow >> outline: aSlide [
 	<gtSlide>
 	^ aSlide paragraph
 		  priority: (self priorityFor: #outline:);
-		  subtitle: 'Outline';
-		  paragraph: '
- 
+		  subtitle: ('Outline' );
+		  paragraph: ('
 • Background — What is Smalltalk?
 • Basics — syntax, sending messages
 • Scripting in the Playground
 • Live programming of classes and methods
 • GT use cases
-'
+')
 ]
 
 { #category : #accessing }
@@ -211,6 +213,10 @@ SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
 		  titleWithFormat: ('A little bit of Smalltalk' asRopedText
 				   fontSize: 70;
 				   glamorousRegularFont)
+		";
+		  subtitleWithFormat: ('@onierstrasz' asRopedText
+				   fontSize: 40;
+				   glamorousRegularFont)"
 ]
 
 { #category : #slides }
