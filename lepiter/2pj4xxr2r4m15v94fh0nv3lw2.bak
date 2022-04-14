@@ -8,119 +8,44 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:05:41.998302+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:05:56.430688+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "HICdMgGZDQChLSUfDvxlaw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "The *receiver* is the object to which the message is sent."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:05:57.723355+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:06:31.929383+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "JqvGNAGZDQChLjhmDvxlaw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "The *sender* is the method sending the message (if the code is in a method somewhere)."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:06:33.378311+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T18:06:59.984528+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "XQPkNgGZDQChL8KXDvxlaw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "The *selector* is the name of the message (without the arguments"
-						}
-					]
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-02T11:01:45.039221+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-02T11:01:46.598627+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ShBz4AmYDQCHqcWoDgfDLQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[todo]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -152,6 +77,117 @@
 					"__type" : "textStyle"
 				},
 				"string" : "There are three kinds of messages you can send to a Smalltalk object, each taking a different number of arguments."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:05:41.998302+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:05:56.430688+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HICdMgGZDQChLSUfDvxlaw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The *receiver* is the object to which the message is sent."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:05:57.723355+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:06:31.929383+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JqvGNAGZDQChLjhmDvxlaw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The *sender* is the method sending the message (if the code is in a method somewhere)."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:06:33.378311+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T18:06:59.984528+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XQPkNgGZDQChL8KXDvxlaw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The *selector* is the name of the message (without the arguments"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1069,7 +1105,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T18:11:54.693852+02:00"
+						"dateAndTimeString" : "2022-04-02T11:05:20.897015+02:00"
 					}
 				},
 				"editEmail" : {
@@ -1080,17 +1116,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T18:12:03.648767+02:00"
+						"dateAndTimeString" : "2022-04-02T11:05:31.19906+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "3f4QSgGZDQChOjUoDvxlaw=="
+					"uidString" : "Uu6N7QmYDQCHvj+2DgfDLQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In practice this is not an issue. Use parentheses to get the order you want."
+				"string" : "Use parentheses to get the order you want."
 			},
 			{
 				"__type" : "pharoSnippet",

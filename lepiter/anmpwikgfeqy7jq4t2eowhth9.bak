@@ -196,80 +196,6 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T17:54:14.503223+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T17:54:14.503223+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "VCPsCgGZDQCg7z+fDvxlaw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T17:54:27.774478+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T17:54:27.774478+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "LKS2CwGZDQCg8OCeDvxlaw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
 								"items" : [
 									{
 										"__type" : "textSnippet",
@@ -296,7 +222,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T17:54:51.33294+02:00"
+												"dateAndTimeString" : "2022-04-14T17:55:00.153454+02:00"
 											}
 										},
 										"uid" : {
@@ -306,7 +232,41 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "Run "
+										"string" : "Run this to see the todos as a simple list:"
+									},
+									{
+										"__type" : "pharoSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-14T17:55:02.175301+02:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-04-14T17:55:02.854184+02:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "XY7DDQGZDQCg9D9CDvxlaw=="
+										},
+										"code" : "LePageToolContentTreeElement showIncomingReferencesInlined"
 									}
 								]
 							},
@@ -658,7 +618,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T15:31:14.917435+02:00"
+						"dateAndTimeString" : "2022-04-14T17:55:06.503106+02:00"
 					}
 				},
 				"uid" : {
