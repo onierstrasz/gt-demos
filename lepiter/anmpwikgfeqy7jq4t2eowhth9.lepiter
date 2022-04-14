@@ -206,7 +206,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T15:09:49.197174+02:00"
+									"dateAndTimeString" : "2022-04-14T15:38:50.457771+02:00"
 								}
 							},
 							"editEmail" : {
@@ -217,44 +217,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T15:09:52.263151+02:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "enHVvv6YDQCs7NPCDI85xw=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Everything is an object]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T15:09:53.798031+02:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T15:10:19.774774+02:00"
+									"dateAndTimeString" : "2022-04-14T15:38:54.519633+02:00"
 								}
 							},
 							"uid" : {
@@ -264,7 +227,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Everything happens by sending messages]]"
+							"string" : "See [[todo]] "
 						},
 						{
 							"__type" : "textSnippet",
@@ -291,7 +254,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T08:20:00.464927+02:00"
+									"dateAndTimeString" : "2022-04-14T15:43:16.184629+02:00"
 								}
 							},
 							"uid" : {
@@ -301,7 +264,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Smalltalk Syntax (the funny bits)]] "
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",
@@ -583,7 +546,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T11:31:38.25075+02:00"
+						"dateAndTimeString" : "2022-04-14T15:31:14.917435+02:00"
 					}
 				},
 				"uid" : {
