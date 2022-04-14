@@ -79,7 +79,82 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:33:05.053085+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:33:54.196205+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "hzK3t/uYDQCpaGSSAgIUYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[Can't load ombu files](https://feenk.slack.com/archives/CNT0ZB7T9/p1649928127981879).  Veit is looking into it. "
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-06T15:53:03.722278+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:33:02.392068+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "zge/al6YDQChiZ/VCtKHIg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[bug in editing live shows](https://feenk.slack.com/archives/CNT0ZB7T9/p1649253152698649) "
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -89,7 +164,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T10:58:09.081061+02:00"
+						"dateAndTimeString" : "2022-04-14T11:32:54.03992+02:00"
 					}
 				},
 				"editEmail" : {
@@ -100,156 +175,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-04T08:31:42.515604+02:00"
+						"dateAndTimeString" : "2022-04-14T11:36:37.274345+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "HH2M8h2YDQCVUd43A/PNPQ=="
+					"uidString" : "XDEGt/uYDQCpZngqAgIUYQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Example slides: "
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T10:58:01.684956+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T10:58:02.578887+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "/gss8h2YDQCVT7gzA/PNPQ=="
-				},
-				"code" : "GtLiveShow openInSpace: GtExampleLiveShow"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T16:49:18.389129+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T16:49:31.003128+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uCf3M1+YDQCYIdPUCQdxzw=="
-				},
-				"code" : "GtLiveShow openInSpace: GtTour"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T11:59:20.376058+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T11:59:41.415106+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Oov2JluYDQChgW44CtKHIg=="
-				},
-				"code" : "GtLiveShow openInSpace:  GtMoldableDevelopmentSlideshow"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-06T15:53:03.722278+02:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T15:07:01.2747+02:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "zge/al6YDQChiZ/VCtKHIg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "NB: [bug in editing live shows](https://feenk.slack.com/archives/CNT0ZB7T9/p1649253152698649) "
+				"string" : "#Open Issues"
 			},
 			{
 				"__type" : "textSnippet",
@@ -270,7 +206,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-06T16:59:19.716596+02:00"
+									"dateAndTimeString" : "2022-04-14T11:35:01.8528+02:00"
 								}
 							},
 							"editEmail" : {
@@ -281,17 +217,54 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-06T16:59:47.478089+02:00"
+									"dateAndTimeString" : "2022-04-14T11:35:50.07874+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "/lnJV1+YDQCYOHnTCQdxzw=="
+								"uidString" : "+LefvvuYDQCpiIx7AgIUYQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Looks really messy. The text with links is ok, but adding the targets looks painful."
+							"string" : "What I need is just the {{gtClass:name=GtPharoSyntaxExplainer}}."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:35:54.100087+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:36:15.188333+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "FVDWwfuYDQCpi3mKAgIUYQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "See {{gtMethod:SmalltalkIntroSlideshow>>#methodSyntax:}}. "
 						},
 						{
 							"__type" : "textSnippet",
@@ -490,7 +463,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T08:20:10.431049+02:00"
+									"dateAndTimeString" : "2022-04-14T08:20:55.143932+02:00"
 								}
 							},
 							"editEmail" : {
@@ -501,17 +474,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T08:20:27.642313+02:00"
+									"dateAndTimeString" : "2022-04-14T11:31:50.662437+02:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "ahalBfmYDQCpIVhzAgIUYQ=="
+								"uidString" : "cuV4CPmYDQCpI81WAgIUYQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "Prepare a coding example. Maybe a stack machine. "
+							"string" : "Add ombu changes to [[Programming Classes and Methods]] "
 						},
 						{
 							"__type" : "textSnippet",
@@ -645,7 +618,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T16:21:45.006099+02:00"
+						"dateAndTimeString" : "2022-04-14T11:31:38.25075+02:00"
 					}
 				},
 				"uid" : {
@@ -655,7 +628,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Pages to work on"
+				"string" : "##TO DO"
 			},
 			{
 				"__type" : "textSnippet",
@@ -1465,6 +1438,146 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#How to find a good example method (done)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-03T10:58:01.684956+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-03T10:58:02.578887+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "/gss8h2YDQCVT7gzA/PNPQ=="
+							},
+							"code" : "GtLiveShow openInSpace: GtExampleLiveShow"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-06T16:49:18.389129+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-06T16:49:31.003128+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "uCf3M1+YDQCYIdPUCQdxzw=="
+							},
+							"code" : "GtLiveShow openInSpace: GtTour"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-06T11:59:20.376058+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T11:32:17.85054+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "Oov2JluYDQChgW44CtKHIg=="
+							},
+							"code" : "GtLiveShow openInSpace:  GtMoldableDevelopmentSlideshow"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T11:32:03.522111+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T11:32:10.854262+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HH2M8h2YDQCVUd43A/PNPQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Other slide shows to look at"
 			}
 		]
 	},

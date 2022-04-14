@@ -204,6 +204,7 @@ SmalltalkIntroSlideshow >> syntax: aSlide [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
+
 	<gtSlide>
 	^ aSlide title
 		  priority: (self priorityFor: #titleSlideFor:);
