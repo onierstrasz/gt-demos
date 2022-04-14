@@ -5,7 +5,20 @@ Class {
 }
 
 { #category : #accessing }
+StackMachine >> add [
+	self assert: value size >= 2 description: 'operation needs two arguments on the stack'.
+	self push: self pop + self pop
+]
+
+{ #category : #accessing }
 StackMachine >> add1and2 [
+	<gtExample>
+	| result |
+	result := self pushed1and2.
+	result add.
+	self assert: result value size equals: 1.
+	self assert: result top equals: 3.
+	^ result 
 ]
 
 { #category : #accessing }
@@ -13,7 +26,7 @@ StackMachine >> empty [
 	<gtExample>
 	| result |
 	result := StackMachine new.
-	self assert: result value isEmpty.
+	self assert: result isEmpty.
 	^ result
 ]
 
@@ -25,6 +38,7 @@ StackMachine >> initialize [
 
 { #category : #accessing }
 StackMachine >> pop [
+	self assert: value isNotEmpty description: 'stack is empty'.
 	^ self removeLast
 ]
 
@@ -50,7 +64,7 @@ StackMachine >> pushed1 [
 	| result |
 	result := self empty.
 	result push: 1.
-	self assert: result value size equals: 1.
+	self assert: result size equals: 1.
 	self assert: result top equals: 1.
 	^ result 
 ]
@@ -68,5 +82,6 @@ StackMachine >> pushed1and2 [
 
 { #category : #accessing }
 StackMachine >> top [
-	^ self last
+	self assert: value isNotEmpty description: 'stack is empty'.
+	^ value last
 ]
