@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-02T10:58:23.344835+02:00"
+						"dateAndTimeString" : "2022-04-14T15:12:19.50806+02:00"
 					}
 				},
 				"editEmail" : {
@@ -29,12 +29,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-02T10:58:26.066229+02:00"
+						"dateAndTimeString" : "2022-04-14T15:12:19.50806+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "s5q9qQmYDQCHkUoKDgfDLQ=="
+					"uidString" : "1hTEx/6YDQCtB3QNDI85xw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T18:17:52.948891+02:00"
+						"dateAndTimeString" : "2022-04-14T15:12:20.443327+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,12 +66,49 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-07T18:17:52.948891+02:00"
+						"dateAndTimeString" : "2022-04-14T15:12:20.443327+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "tkaUjnSYDQCIiOPfBYDTMA=="
+					"uidString" : "3Fjrx/6YDQCtChlvDI85xw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T15:12:18.156736+02:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-04-14T15:12:18.156736+02:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "23TIx/6YDQCtCCoDDI85xw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -103,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-14T14:39:01.343412+02:00"
+						"dateAndTimeString" : "2022-04-14T15:06:47.861627+02:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Smalltalk has a tiny syntax, but there are a few interesting differences with other languages."
+				"string" : "Smalltalk has a tiny syntax, but there are some interesting differences with other languages."
 			},
 			{
 				"__type" : "textSnippet",
@@ -433,7 +470,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-02T10:59:17.015199+02:00"
+									"dateAndTimeString" : "2022-04-14T15:01:50.956996+02:00"
 								}
 							},
 							"uid" : {
@@ -441,6 +478,40 @@
 								"uidString" : "VH5+2AmYDQCHnVtHDgfDLQ=="
 							},
 							"code" : "'hello world'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:01:52.545822+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:02:00.962852+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "QmR+ov6YDQCs3+XxDI85xw=="
+							},
+							"code" : "'hello world' first = $h"
 						},
 						{
 							"__type" : "textSnippet",
@@ -620,6 +691,74 @@
 								"uidString" : "F3ozKXOYDQCCFOU7B0uiRg=="
 							},
 							"code" : "#ThereIsOnlyOneOfMe"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:07:07.253947+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:07:33.675495+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "2HRAtf6YDQCs4DubDI85xw=="
+							},
+							"code" : "#ThereIsOnlyOneOfMe == 'ThereIsOnlyOneOfMe'"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:07:37.589834+02:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-04-14T15:07:43.77534+02:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "ZlgPt/6YDQCs4/5BDI85xw=="
+							},
+							"code" : "#ThereIsOnlyOneOfMe = 'ThereIsOnlyOneOfMe'"
 						}
 					]
 				},
