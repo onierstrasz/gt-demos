@@ -30,7 +30,7 @@ SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #bouncingAtoms:);
-		  pageNamed: 'Bouncing atoms demo' from: self dbName;
+		  pageNamed: 'Changing a running system on the fly' from: self dbName;
 		  yourself
 ]
 
@@ -111,7 +111,7 @@ SmalltalkIntroSlideshow >> methodSyntax: aSlide [
 	^ aSlide textAndElement
 		  priority: (self priorityFor: #methodSyntax:);
 		  newTextWithFormat: ('Method syntax
-' asRopedText
+' asRopedText bold;
 				   glamorousRegularFont;
 				   fontSize: 40) , ('Note the special syntax for variable declarations (|...|), statement separators (period) and returns (^).' asRopedText
 				   glamorousRegularFont;
@@ -128,14 +128,17 @@ SmalltalkIntroSlideshow >> outline: aSlide [
 	<gtSlide>
 	^ aSlide paragraph
 		  priority: (self priorityFor: #outline:);
-		  subtitle: ('Outline' );
-		  paragraph: ('
+		  subtitleWithFormat: ('Outline' asRopedText
+				   bold;
+				   fontSize: 40;
+				   glamorousRegularFont);
+		  paragraph: '
 • Background — What is Smalltalk?
 • Basics — syntax, sending messages
 • Scripting in the Playground
 • Live programming of classes and methods
 • GT use cases
-')
+'
 ]
 
 { #category : #accessing }
@@ -210,27 +213,31 @@ SmalltalkIntroSlideshow >> syntax: aSlide [
 
 { #category : #accessing }
 SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
-
 	<gtSlide>
 	^ aSlide title
 		  priority: (self priorityFor: #titleSlideFor:);
+		  titleBottomPadding: 30;
 		  titleWithFormat: ('A little bit of Smalltalk' asRopedText
 				   fontSize: 70;
-				   glamorousRegularFont)
-		";
+				   bold;
+				   glamorousRegularFont);
 		  subtitleWithFormat: ('@onierstrasz' asRopedText
 				   fontSize: 40;
-				   glamorousRegularFont)"
+				   glamorousRegularFont)
 ]
 
 { #category : #slides }
 SmalltalkIntroSlideshow >> twoRules: aSlide [
+
 	<gtSlide>
 	^ aSlide paragraph
 		  priority: (self priorityFor: #twoRules:);
-		  subtitle: 'Two rules';
+		  subtitleWithFormat: ('Two rules' asRopedText
+				   bold;
+				   fontSize: 40;
+				   glamorousRegularFont);
 		  paragraph: '
-		  
+
 1. Everything is an object
 
 2. Everything happens by sending messages
