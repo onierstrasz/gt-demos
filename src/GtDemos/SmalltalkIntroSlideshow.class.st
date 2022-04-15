@@ -105,10 +105,15 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 { #category : #accessing }
 SmalltalkIntroSlideshow >> methodSyntax: aSlide [
 
+	"Methods start with a declaration of the message selector and arguments. Temporaries must be declared. Statements are separate by periods. The caret (^) is special syntax for returning a result."
+
 	<gtSlide>
 	^ aSlide textAndElement
 		  priority: (self priorityFor: #methodSyntax:);
-		  newTextWithFormat: ('PLACEHOLDER' asRopedText
+		  newTextWithFormat: ('Method syntax
+' asRopedText
+				   glamorousRegularFont;
+				   fontSize: 40) , ('Note the special syntax for variable declarations (|...|), statement separators (period) and returns (^).' asRopedText
 				   glamorousRegularFont;
 				   fontSize: 30);
 		  element: [ 
@@ -149,10 +154,9 @@ SmalltalkIntroSlideshow >> priorities [
 		syntax:
 		messages:
 		methodSyntax:
+		bouncingAtoms:
 		scriptingInThePlayground:
 		programmingClassesAndMethods:
-		bouncingAtoms:
-
 		)
 ]
 

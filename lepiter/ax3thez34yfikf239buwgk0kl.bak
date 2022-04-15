@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:09:16.588202+02:00"
+						"dateAndTimeString" : "2022-04-15T09:59:22.11482+02:00"
 					}
 				},
 				"editEmail" : {
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-03T11:09:16.588202+02:00"
+						"dateAndTimeString" : "2022-04-15T09:59:37.484879+02:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Rename this to changin"
 			},
 			{
 				"__type" : "textSnippet",
@@ -253,7 +253,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-03T11:13:56.111125+02:00"
+									"dateAndTimeString" : "2022-04-03T11:14:00.411006+02:00"
 								}
 							},
 							"uid" : {
@@ -263,7 +263,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "- Find an atom that doesn't move\n- Drag it\n- Click on it\n- ? Spawn a new inspector and close the old pane\n\n- Look at the panes: \n  - Overview: click on Background, Border ...\n  - Children: none\n  - Parents: BouncingAtomsElement\n  - Raw: velocity\n  - Meta: methods\n\n- Change velocity to 10@10 and back to 0@0\n- Change atom size to 10@10\n- Change background to Color blue\n- Look for senders of velocity:\n- See that it is in the bounceIn: method\n\n- Change it so the colors change when vx becomes orange or green when vx turns negative  or positive\n\n\t\tvx < 0\n\t\t\tifTrue: [ self background: Color orange ]\n\t\t\tifFalse: [ self background: Color green ]\n\n- Change its velocity to 20@5\n- See its colors change\n- Optional: change bounceIn: to set the color to grey and the size to 10@10"
+							"string" : "- Find an atom that doesn't move\n- Drag it\n- Click on it\n- ? Spawn a new inspector and close the old pane (no)\n\n- Look at the panes: \n  - Overview: click on Background, Border ...\n  - Children: none\n  - Parents: BouncingAtomsElement\n  - Raw: velocity\n  - Meta: methods\n\n- Change velocity to 10@10 and back to 0@0\n- Change atom size to 10@10\n- Change background to Color blue\n- Look for senders of velocity:\n- See that it is in the bounceIn: method\n\n- Change it so the colors change when vx becomes orange or green when vx turns negative  or positive\n\n\t\tvx < 0\n\t\t\tifTrue: [ self background: Color orange ]\n\t\t\tifFalse: [ self background: Color green ]\n\n- Change its velocity to 20@5\n- See its colors change\n- Optional: change bounceIn: to set the color to grey and the size to 10@10"
 						}
 					]
 				},

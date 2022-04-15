@@ -71,7 +71,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-04-14T09:09:55.788408+02:00"
+									"dateAndTimeString" : "2022-04-14T17:53:25.856981+02:00"
 								}
 							},
 							"uid" : {
@@ -81,7 +81,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We would like to implement a simple stack machine."
+							"string" : "We would like to implement a simple stack machine in Smalltalk."
 						}
 					]
 				},
