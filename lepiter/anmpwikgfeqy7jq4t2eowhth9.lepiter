@@ -273,43 +273,6 @@
 								"__type" : "snippets",
 								"items" : [
 									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T17:54:50.605027+02:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-04-14T17:55:00.153454+02:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "movcDAGZDQCg8wWEDvxlaw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "Run this to see the todos as a simple list:"
-									},
-									{
 										"__type" : "pharoSnippet",
 										"children" : {
 											"__type" : "snippets",

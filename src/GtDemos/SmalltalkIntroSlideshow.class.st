@@ -217,7 +217,7 @@ SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
 	^ aSlide title
 		  priority: (self priorityFor: #titleSlideFor:);
 		  titleBottomPadding: 30;
-		  titleWithFormat: ('A little bit of Smalltalk' asRopedText
+		  titleWithFormat: ('A bit of Smalltalk' asRopedText
 				   fontSize: 70;
 				   bold;
 				   glamorousRegularFont);
