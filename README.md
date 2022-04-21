@@ -7,12 +7,13 @@ Metacello new baseline: 'GtDemos';
   load.
 ```
 
-Then:
 ```
 BaselineOfGtDemos loadLepiter
 ```
 
-
+```
+SmalltalkIntroSlideshow show
+```
 ## Various demos in Gt
 
 Repo for random demos and slideshows.
