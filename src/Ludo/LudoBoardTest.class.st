@@ -1,7 +1,7 @@
 Class {
 	#name : #LudoBoardTest,
 	#superclass : #Object,
-	#category : #'Ludo-Tests'
+	#category : #'Ludo-Examples'
 }
 
 { #category : #accessing }
