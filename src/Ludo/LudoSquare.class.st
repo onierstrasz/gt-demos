@@ -7,12 +7,17 @@ Class {
 	#category : #'Ludo-Model'
 }
 
-{ #category : #accessing }
-LudoSquare >> initialize [
+{ #category : #initialization }
+LudoSquare >> clear [
 	self token: LudoToken blank
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
+LudoSquare >> initialize [
+	self clear
+]
+
+{ #category : #printing }
 LudoSquare >> printOn: aStream [
 	aStream nextPutAll: self token name
 ]

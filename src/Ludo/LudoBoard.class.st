@@ -12,9 +12,10 @@ Class {
 	#category : #'Ludo-Model'
 }
 
-{ #category : #accessing }
+{ #category : #initialization }
 LudoBoard >> initialize [
-
+	super initialize.
+	
 	players := OrderedCollection new.
 	($A to: $D) do: [ :player | 
 		players add: (LudoPlayer new name: player) ].
@@ -22,8 +23,6 @@ LudoBoard >> initialize [
 	squares := OrderedCollection new.
 	1 to: 40 do: [ :n | squares add: LudoSquare new ].
 
-	"We need to keep track of which tokens are in the start corner, which are in play, and which have reached their goal."
-	
 	players do: #initializeTokens
 ]
 

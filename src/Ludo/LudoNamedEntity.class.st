@@ -10,11 +10,22 @@ Class {
 	#category : #'Ludo-Model'
 }
 
-{ #category : #accessing }
+{ #category : #creation }
 LudoNamedEntity class >> named: aString [
 	^ self new
 		  name: aString;
 		  yourself
+]
+
+{ #category : #constants }
+LudoNamedEntity >> defaultName [
+	^ 'undefined'
+]
+
+{ #category : #initialization }
+LudoNamedEntity >> initialize [
+	super initialize.
+	name := self defaultName
 ]
 
 { #category : #accessing }
@@ -27,7 +38,7 @@ LudoNamedEntity >> name: aStringOrChar [
 	name := aStringOrChar asString
 ]
 
-{ #category : #accessing }
+{ #category : #printing }
 LudoNamedEntity >> printOn: aStream [
 	aStream nextPutAll: self name
 ]
