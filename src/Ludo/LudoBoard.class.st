@@ -7,8 +7,7 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'players',
-		'squares',
-		'tokenDict'
+		'squares'
 	],
 	#category : #'Ludo-Model'
 }
@@ -23,15 +22,9 @@ LudoBoard >> initialize [
 	squares := OrderedCollection new.
 	1 to: 40 do: [ :n | squares add: LudoSquare new ].
 
-	"Do we need a dictionary of tokens, or should each player just know its tokens?
-	We need to keep track of which tokens are in the start corner, which are in play, and which have reached their goal."
+	"We need to keep track of which tokens are in the start corner, which are in play, and which have reached their goal."
 	
-	tokenDict := Dictionary new.
-	players do: [ :player | 
-		self assert: player name first isUppercase.
-		tokenDict at: player put: { 
-				(LudoToken named: player name).
-				(LudoToken named: player name asLowercase) } ]
+	players do: #initializeTokens
 ]
 
 { #category : #accessing }
@@ -46,5 +39,5 @@ LudoBoard >> squares [
 
 { #category : #accessing }
 LudoBoard >> tokens [
-	^ tokenDict values flatten
+	^ players flatCollect: #tokens
 ]
