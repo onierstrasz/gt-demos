@@ -237,7 +237,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-22T10:43:22.671518+02:00"
+						"dateAndTimeString" : "2022-04-22T11:49:03.388858+02:00"
 					}
 				},
 				"editEmail" : {
@@ -248,14 +248,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-22T10:55:05.001547+02:00"
+						"dateAndTimeString" : "2022-04-22T11:51:57.74688+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "un3D9JuZDQC/+exNCJ/wxw=="
+					"uidString" : "2BCm35yZDQCtDYIiA3tQTA=="
 				},
-				"code" : "board := LudoBoardTest new emptyBoard.\r\rplayerA := board players first.\rtokenA := playerA startTokens first\r\r"
+				"code" : "board := LudoBoardTest new emptyBoard.\rplayerA := board players first.\rboard enterPlayTokenFor: playerA.\rplayerB := board players second.\rboard enterPlayTokenFor: playerB.\rboard squares\r"
 			},
 			{
 				"__type" : "textSnippet",
@@ -271,7 +271,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-22T09:26:52.24201+02:00"
+						"dateAndTimeString" : "2022-04-22T11:52:00.198564+02:00"
 					}
 				},
 				"editEmail" : {
@@ -282,7 +282,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-04-22T09:26:52.24201+02:00"
+						"dateAndTimeString" : "2022-04-22T11:52:42.923461+02:00"
 					}
 				},
 				"uid" : {
@@ -292,7 +292,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Actually the Game is responsible for taking care of what happens if the square is occupied, so there needs to be another step in between. First determine the target squarem then determine whether we can land there"
 			},
 			{
 				"__type" : "textSnippet",
