@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-28T18:43:40.186813+01:00"
+						"dateAndTimeString" : "2022-11-28T18:43:48.454398+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-28T18:43:43.112237+01:00"
+						"dateAndTimeString" : "2022-11-28T18:49:41.817309+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Let's load some subtitles and wrap them in a new class."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -140,14 +140,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-28T18:43:45.360483+01:00"
+						"dateAndTimeString" : "2022-11-28T18:50:11.224883+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "f/ZkJu2qDQCFrY3yBqSDYA=="
 				},
-				"code" : ""
+				"code" : "subdir := './pharo-local/iceberg/onierstrasz/gt-demos/doc/Subs' asFileReference.\rsubs := subdir allChildrenMatching: '*.srt'.\rahb := subs first.\r"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-28T18:49:27.877851+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-28T18:49:27.877851+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AF3POu2qDQCGBKegBqSDYA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},
