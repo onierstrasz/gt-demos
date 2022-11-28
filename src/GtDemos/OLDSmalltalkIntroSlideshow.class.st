@@ -7,18 +7,18 @@ SmalltalkIntroSlideshow show
 
 "
 Class {
-	#name : #SmalltalkIntroSlideshow,
+	#name : #OLDSmalltalkIntroSlideshow,
 	#superclass : #Object,
 	#category : #'GtDemos-Slideshows'
 }
 
 { #category : #accessing }
-SmalltalkIntroSlideshow class >> show [
-	GtLiveShow openInSpace: SmalltalkIntroSlideshow
+OLDSmalltalkIntroSlideshow class >> show [
+	GtLiveShow openInSpace: OLDSmalltalkIntroSlideshow
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> addTargetCircleFor: aTarget named: aSymbol [
+OLDSmalltalkIntroSlideshow >> addTargetCircleFor: aTarget named: aSymbol [
 
 	aTarget addChild:
 		((self yellowExplanationTargetCircleFor: aSymbol) relocate:
@@ -26,7 +26,17 @@ SmalltalkIntroSlideshow >> addTargetCircleFor: aTarget named: aSymbol [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
+OLDSmalltalkIntroSlideshow >> addingAutoPlay: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #addingAutoPlay:);
+		pageNamed: 'Changing a running system' from: self myLepiterDB;
+		yourself
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #bouncingAtoms:);
@@ -34,13 +44,23 @@ SmalltalkIntroSlideshow >> bouncingAtoms: aSlide [
 		  yourself
 ]
 
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> composingExamples: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #composingExamples:);
+		pageNamed: 'Composing (Test) Examples' from: self myLepiterDB;
+		yourself
+]
+
 { #category : #accessing }
-SmalltalkIntroSlideshow >> dbName [
+OLDSmalltalkIntroSlideshow >> dbName [
 	^ 'onierstrasz/gt-demos/lepiter'
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
+OLDSmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #everythingHappensBySendingMessages:);
@@ -48,15 +68,25 @@ SmalltalkIntroSlideshow >> everythingHappensBySendingMessages: aSlide [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
+OLDSmalltalkIntroSlideshow >> everythingIsAnObject: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #everythingIsAnObject:);
 		  pageNamed: 'Everything is an object' from: self dbName
 ]
 
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> exploringLudo: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #exploringLudo:);
+		pageNamed: 'Exploring a live system' from: self myLepiterDB;
+		yourself
+]
+
 { #category : #accessing }
-SmalltalkIntroSlideshow >> findTargetWithText: aText in: expandedMethodElement [
+OLDSmalltalkIntroSlideshow >> findTargetWithText: aText in: expandedMethodElement [
 	^ expandedMethodElement
 		  allChildrenBreadthFirstDetect: [ :aChild | 
 			  (aChild isKindOf: BrTextElementWithCursors) and: [ 
@@ -65,7 +95,7 @@ SmalltalkIntroSlideshow >> findTargetWithText: aText in: expandedMethodElement [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> gtWorld: aSlide [
+OLDSmalltalkIntroSlideshow >> gtWorld: aSlide [
 	<gtSlide>
 	^ aSlide textAndElement
 		  elementWeight: 0.6;
@@ -78,7 +108,7 @@ Gt is built on top of Pharo, a modern, open-source Smalltalk.' asRopedText
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> imageChanges: aSlide [
+OLDSmalltalkIntroSlideshow >> imageChanges: aSlide [
 	<gtSlide>
 	^ aSlide textAndElement
 		  elementWeight: 0.50;
@@ -95,7 +125,39 @@ Changes to classes and methods are logged as you program.' asRopedText
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> messages: aSlide [
+OLDSmalltalkIntroSlideshow >> liveDocumentationLogic: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #liveDocumentationLogic:);
+		pageNamed: 'Live documentation of the game logic' from: self myLepiterDB;
+		yourself
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> liveDocumentationUML: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #liveDocumentationUML:);
+		pageNamed: 'Live documentation of the technical solution' from: self myLepiterDB;
+		yourself
+]
+
+{ #category : #accessing }
+OLDSmalltalkIntroSlideshow >> ludoAppetizer: aSlide [
+	<gtSlide>
+	
+	^ (aSlide textAndElement)
+		elementWeight: 0.5;
+		priority: (self priorityFor: #ludoAppetizer:);
+		newTextWithFormat: (self asHeader: 'Appetizer') bold,(self asText: '
+Ludo as a running example of a live system');
+		element: [ GtLudoGame new asElement asScalableElement ]
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> messages: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #messages:);
@@ -103,7 +165,7 @@ SmalltalkIntroSlideshow >> messages: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> methodSyntax: aSlide [
+OLDSmalltalkIntroSlideshow >> methodSyntax: aSlide [
 
 	"Methods start with a declaration of the message selector and arguments. Temporaries must be declared. Statements are separate by periods. The caret (^) is special syntax for returning a result."
 
@@ -123,7 +185,7 @@ SmalltalkIntroSlideshow >> methodSyntax: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> outline: aSlide [
+OLDSmalltalkIntroSlideshow >> outline: aSlide [
 
 	<gtSlide>
 	^ aSlide paragraph
@@ -142,7 +204,12 @@ SmalltalkIntroSlideshow >> outline: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> priorities [
+OLDSmalltalkIntroSlideshow >> picturesDirectoryPath [
+	^ Path * 'feenkcom' / 'gtoolkit-demos' / 'data' / 'images'
+]
+
+{ #category : #accessing }
+OLDSmalltalkIntroSlideshow >> priorities [
 	"Instead of manually setting priorities, just list the slides in order here."
 	<gtExample>
 	^ #( 
@@ -164,12 +231,12 @@ SmalltalkIntroSlideshow >> priorities [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> priorityFor: aSlideMethodSelector [
+OLDSmalltalkIntroSlideshow >> priorityFor: aSlideMethodSelector [
 	^ self priorities indexOf: aSlideMethodSelector
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
+OLDSmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #programmingClassesAndMethods:);
@@ -177,7 +244,17 @@ SmalltalkIntroSlideshow >> programmingClassesAndMethods: aSlide [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
+OLDSmalltalkIntroSlideshow >> recordingMoves: aSlide [
+	<gtSlide>
+	
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #recordingMoves:);
+		pageNamed: 'Recording and visualizing token moves' from: self myLepiterDB;
+		yourself
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #scriptingInThePlayground:);
@@ -185,7 +262,35 @@ SmalltalkIntroSlideshow >> scriptingInThePlayground: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> smalltalk80: aSlide [
+OLDSmalltalkIntroSlideshow >> slidePriorities [
+	"Instead of manually setting priorities, just list the slides in order here."
+	<gtExample>
+	^ #( 
+		titleSlideFor:
+		ludoAppetizer:
+		outline:
+		smalltalk80:
+		gtWorld:
+		imageChanges:
+		twoRules:
+		everythingIsAnObject:
+		everythingHappensBySendingMessages:
+		threeKindsOfMessages:
+		syntax:
+		methodSyntax:
+		exploringLudo:
+		addingAutoPlay:
+		composingExamples:
+		recordingMoves:
+		liveDocumentationLogic:
+		liveDocumentationUML:
+		takeHome:
+		whatsNext:
+		)
+]
+
+{ #category : #accessing }
+OLDSmalltalkIntroSlideshow >> smalltalk80: aSlide [
 
 	"In the late 60s, Alan Kay predicted that in the foreseeable future handheld multimedia computers would become affordable. He called this a “Dynabook”. (The photo shows a mockup, not a real computer.)
 He reasoned that such systems would need to be based on object from the ground up, so he set up a lab at the Xerox Palo Alto Research Center (PARC) to develop such a fully object-oriented system, including both software and hardware. They developed the first graphical workstations with windowing system and mouse."
@@ -204,7 +309,7 @@ He reasoned that such systems would need to be based on object from the ground u
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> syntax: aSlide [
+OLDSmalltalkIntroSlideshow >> syntax: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		  priority: (self priorityFor: #syntax:);
@@ -212,7 +317,36 @@ SmalltalkIntroSlideshow >> syntax: aSlide [
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
+OLDSmalltalkIntroSlideshow >> takeHome: aSlide [
+
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #takeHome:);
+		subtitleWithFormat: (self asSubtitle: 'Take home messages');
+		paragraphWithFormat:
+				(self
+						asText:
+							'
+
+• Smalltalk enables '), (self asText: 'live programming') italic, (self asText: '
+
+• Example methods enable '), (self asText: 'composable tests') italic, (self asText: ' and live interaction with test results
+
+• '), (self asText: 'Moldable development') italic, (self asText: ' brings together coding and exploration of live systems 
+')
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> threeKindsOfMessages: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		  priority: (self priorityFor: #threeKindsOfMessages:);
+		  pageNamed: 'Three kinds of messages' from: self myLepiterDB
+]
+
+{ #category : #accessing }
+OLDSmalltalkIntroSlideshow >> titleSlideFor: aSlide [
 	<gtSlide>
 	^ aSlide title
 		  priority: (self priorityFor: #titleSlideFor:);
@@ -227,7 +361,7 @@ SmalltalkIntroSlideshow >> titleSlideFor: aSlide [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> twoRules: aSlide [
+OLDSmalltalkIntroSlideshow >> twoRules: aSlide [
 
 	<gtSlide>
 	^ aSlide paragraph
@@ -245,14 +379,36 @@ SmalltalkIntroSlideshow >> twoRules: aSlide [
 ]
 
 { #category : #slides }
-SmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
+OLDSmalltalkIntroSlideshow >> whatsNext: aSlide [
+	<gtSlide>
+	
+	^ (aSlide paragraph)
+		priority: (self priorityFor: #whatsNext:);
+		subtitleWithFormat: (self asSubtitle: 'What''s next?');
+		paragraphWithFormat:
+				(self
+						asText:
+							'
+
+• Download GT from gtoolkit.com
+
+• Explore the Glamorous Toolkit Book
+
+• Learn about Pharo — go to books.pharo.org
+
+• Have fun!
+')
+]
+
+{ #category : #slides }
+OLDSmalltalkIntroSlideshow >> worldExampleSlideFor: aSlide [
 	"<gtSlide>"
 	^ aSlide world
 		  priority: (self priorityFor: #worldExampleSlideFor:)
 ]
 
 { #category : #accessing }
-SmalltalkIntroSlideshow >> yellowExplanationTargetCircleFor: aModel [
+OLDSmalltalkIntroSlideshow >> yellowExplanationTargetCircleFor: aModel [
 	"Copied from GtCoderSlideshow"
 	^ BrButton new
 				constraintsDo: [ :c | c ignoreByLayout ];
