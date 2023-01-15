@@ -765,6 +765,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "The method {{gtMethod:name=Subtitles>>initializeEntries}} assumes there are no extra blank lines, and at most one blank line at the end."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:16:00.664497+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:16:28.925177+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "NkBK0KquDQCivj+sCjgbOQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "There is something wrong with the output if we compare the versions with FileMerge"
 						}
 					]
 				},

@@ -523,7 +523,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-15T08:49:44.587221+01:00"
+									"dateAndTimeString" : "2023-01-15T09:05:26.276554+01:00"
 								}
 							},
 							"editEmail" : {
@@ -534,12 +534,83 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-15T08:49:44.587221+01:00"
+									"dateAndTimeString" : "2023-01-15T09:05:35.893552+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "m+prcqquDQChsq4tCjgbOQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Now we fix the Subtitles class to use it."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:05:44.137079+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:05:44.61033+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "sn2dq6quDQCiVA/PCjgbOQ=="
+							},
+							"code" : "subs := Subtitles for: ahb ."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:05:37.187072+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:05:37.187072+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "7W8zq6quDQCiTntqCjgbOQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -694,6 +765,43 @@
 								"__type" : "textStyle"
 							},
 							"string" : "The method {{gtMethod:name=Subtitles>>initializeEntries}} assumes there are no extra blank lines, and at most one blank line at the end."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:16:00.664497+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-15T09:16:11.082455+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "NkBK0KquDQCivj+sCjgbOQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "There is something wrong with the output "
 						}
 					]
 				},

@@ -164,19 +164,19 @@ Subtitles >> scale: firstIndex to: newFirst and: lastIndex to: newLast [
 	"self scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
 
 	| oldFirst oldLast scale |
-	oldFirst := (self entries at: firstIndex) at: #start.
-	oldLast := (self entries at: lastIndex) at: #start.
+	oldFirst := (self entries at: firstIndex) start.
+	oldLast := (self entries at: lastIndex) start.
 	scale := (newLast - newFirst) asMilliSeconds
 			/ (oldLast - oldFirst) asMilliSeconds.
 	self entries
 		do: [ :each | 
 			| newStart newEnd |
-			newStart := (((each at: #start) - oldFirst) * scale + newFirst)
+			newStart := (((each start) - oldFirst) * scale + newFirst)
 					asMilliSeconds milliseconds asDuration.
-			newEnd := (((each at: #end) - oldFirst) * scale + newFirst) asMilliSeconds
+			newEnd := (((each end) - oldFirst) * scale + newFirst) asMilliSeconds
 					milliseconds asDuration.
-			each at: #newStart put: newStart.
-			each at: #newEnd put: newEnd ]
+			each newStart: newStart.
+			each newEnd: newEnd ]
 ]
 
 { #category : #conversion }
