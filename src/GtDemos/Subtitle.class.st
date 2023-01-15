@@ -1,0 +1,105 @@
+Class {
+	#name : #Subtitle,
+	#superclass : #Object,
+	#instVars : [
+		'number',
+		'lines',
+		'start',
+		'end',
+		'newStart',
+		'newEnd'
+	],
+	#category : #GtDemos
+}
+
+{ #category : #accessing }
+Subtitle >> end [
+	^ end
+]
+
+{ #category : #accessing }
+Subtitle >> end: aDuration [
+	end := aDuration.
+	self newEnd: end.
+]
+
+{ #category : #accessing }
+Subtitle >> gtItemsFor: aView [
+	<gtView>
+	^ aView forward
+		title: 'Items';
+		priority: 10;
+		object: [ {
+		'number' -> self number asString.
+		'start' -> self start asString.
+		'end' -> self end asString.
+		'lines' -> (' ' join: self lines).
+		
+		
+		} asDictionary ];
+		view: #gtItemsFor:
+]
+
+{ #category : #accessing }
+Subtitle >> initialize [
+	number := 1.
+	lines := OrderedCollection new.
+	start := Duration new.
+	end := Duration new.
+]
+
+{ #category : #accessing }
+Subtitle >> joinedLines [
+	^ ' ' join: self lines
+]
+
+{ #category : #accessing }
+Subtitle >> lines [
+	^ lines
+]
+
+{ #category : #accessing }
+Subtitle >> lines: aCollection [
+	lines := aCollection asOrderedCollection
+]
+
+{ #category : #accessing }
+Subtitle >> newEnd [
+	^ newEnd
+]
+
+{ #category : #accessing }
+Subtitle >> newEnd: aDuration [
+	newEnd := aDuration
+]
+
+{ #category : #accessing }
+Subtitle >> newStart [
+	^ newStart
+]
+
+{ #category : #accessing }
+Subtitle >> newStart: aDuration [
+	newStart := aDuration
+]
+
+{ #category : #accessing }
+Subtitle >> number [
+	^ number
+]
+
+{ #category : #accessing }
+Subtitle >> number: anInteger [
+	number := anInteger
+]
+
+{ #category : #accessing }
+Subtitle >> start [
+	^ start
+]
+
+{ #category : #accessing }
+Subtitle >> start: aDuration [
+	start := aDuration.
+	self newStart: start.
+]

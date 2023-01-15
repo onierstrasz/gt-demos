@@ -100,25 +100,35 @@ Subtitles >> gtEntriesFor: aView [
 		items: [ self entries ];
 		actionUpdateButtonTooltip: 'Update item list';
 		column: 'Index' text: [ :entry :index | index ];
-		column: 'Start' text: [ :entry | entry at: #start ];
-		column: 'End' text: [ :entry | entry at: #end ];
-		column: 'New Start' text: [ :entry | entry at: #newStart ];
-		column: 'New End' text: [ :entry | entry at: #newEnd ];
-		column: 'Lines' text: [ :entry | ' ' join: (entry at: #lines) ]
+		column: 'Start' text: [ :entry | entry start ];
+		column: 'End' text: [ :entry | entry end ];
+		column: 'New Start' text: [ :entry | entry newStart ];
+		column: 'New End' text: [ :entry | entry newEnd ];
+		column: 'Lines' text: [ :entry | entry joinedLines ]
 ]
 
 { #category : #initialization }
 Subtitles >> initializeEntries [
 	entries := ((String crlf repeat: 2) split: self file asFileReference contents)
-			collect: [ :each | 
+			collectWithIndex: [ :each : index | 
 				| lines times |
 				lines := String crlf split: each.
 				times := '--> ' split: lines second.
-				{#start -> (self asDuration: times first).
+			"	{#start -> (self asDuration: times first).
 					#end -> (self asDuration: times second).
 					#newStart -> (self asDuration: times first).
 					#newEnd -> (self asDuration: times second).
-					#lines -> (lines allButFirst: 2)} asDictionary ]
+					#lines -> (lines allButFirst: 2)} asDictionary"
+					
+				Subtitle new
+					number: index;
+					start: (self asDuration: times first);
+					end: (self asDuration: times second);
+					lines: (lines allButFirst: 2)
+					
+					
+					
+					 ]
 ]
 
 { #category : #conversion }
@@ -130,11 +140,11 @@ Subtitles >> newContents [
 			stream
 				nextPutAll: index asString;
 				nextPutAll: String crlf;
-				nextPutAll: (self durationAsTime: (each at: #newStart));
+				nextPutAll: (self durationAsTime: (each newStart));
 				nextPutAll: ' --> ';
-				nextPutAll: (self durationAsTime: (each at: #newEnd));
+				nextPutAll: (self durationAsTime: (each newEnd));
 				nextPutAll: String crlf.
-			(each at: #lines)
+			(each lines)
 				do: [ :line | 
 					stream
 						nextPutAll: line;
