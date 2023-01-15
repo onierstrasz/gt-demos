@@ -94,6 +94,17 @@ Subtitle >> number: anInteger [
 ]
 
 { #category : #accessing }
+Subtitle >> printOn: aStream [
+	super printOn: aStream.
+	aStream
+		nextPutAll: '(';
+		nextPutAll: self number asString;
+		nextPutAll: ', ';
+		nextPutAll: self start asString;
+		nextPutAll: ')'
+]
+
+{ #category : #accessing }
 Subtitle >> start [
 	^ start
 ]

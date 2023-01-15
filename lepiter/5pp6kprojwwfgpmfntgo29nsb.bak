@@ -791,7 +791,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-15T09:16:11.082455+01:00"
+									"dateAndTimeString" : "2023-01-15T09:16:28.925177+01:00"
 								}
 							},
 							"uid" : {
@@ -801,7 +801,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "There is something wrong with the output "
+							"string" : "There is something wrong with the output if we compare the versions with FileMerge"
 						}
 					]
 				},

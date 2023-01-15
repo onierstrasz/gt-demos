@@ -99,11 +99,24 @@ Subtitles >> gtEntriesFor: aView [
 		priority: 10;
 		items: [ self entries ];
 		actionUpdateButtonTooltip: 'Update item list';
-		column: 'Index' text: [ :entry :index | index ];
-		column: 'Start' text: [ :entry | entry start ];
-		column: 'End' text: [ :entry | entry end ];
-		column: 'New Start' text: [ :entry | entry newStart ];
-		column: 'New End' text: [ :entry | entry newEnd ];
+		column: 'Index' text: [ :entry :index | index ] width: 50;
+		column: 'Start' text: [ :entry | entry start ] width: 100;
+		column: 'End' text: [ :entry | entry end ] width: 100;
+		column: 'Lines' text: [ :entry | entry joinedLines ]
+]
+
+{ #category : #ui }
+Subtitles >> gtNewEntriesFor: aView [
+	<gtView>
+	^ aView columnedList
+		title: 'New Entries';
+		priority: 20;
+		items: [ self entries ];
+		actionUpdateButtonTooltip: 'Update item list';
+		column: 'Index' text: [ :entry :index | index ] width: 50;
+	
+		column: 'New Start' text: [ :entry | entry newStart ] width: 100;
+		column: 'New End' text: [ :entry | entry newEnd ] width: 100;
 		column: 'Lines' text: [ :entry | entry joinedLines ]
 ]
 
@@ -160,8 +173,48 @@ Subtitles >> printOn: aStream [
 ]
 
 { #category : #conversion }
+Subtitles >> scale: aScalingArray [
+	"Scale subtitles using multiple synchronization points.
+	self scale: { 1 -> aDuration . ... }"
+	1
+		to: aScalingArray size - 1
+		do: [ :index | 
+			| start end |
+			start := aScalingArray at: index.
+			end := aScalingArray at: index + 1.
+			self
+				scale: start key
+				to: start value
+				and: end key
+				to: end value ]
+]
+
+{ #category : #conversion }
 Subtitles >> scale: firstIndex to: newFirst and: lastIndex to: newLast [
-	"self scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
+	"Scale just the subs from firstIndex to lastIndex
+	self scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
+
+	| oldFirst oldLast scale |
+	oldFirst := (self entries at: firstIndex) start.
+	oldLast := (self entries at: lastIndex) start.
+	scale := (newLast - newFirst) asMilliSeconds
+			/ (oldLast - oldFirst) asMilliSeconds.
+	firstIndex to: lastIndex
+		do: [ :index | 
+			| newStart newEnd each |
+			each := self entries at: index.
+			newStart := (((each start) - oldFirst) * scale + newFirst)
+					asMilliSeconds milliseconds asDuration.
+			newEnd := (((each end) - oldFirst) * scale + newFirst) asMilliSeconds
+					milliseconds asDuration.
+			each newStart: newStart.
+			each newEnd: newEnd ]
+]
+
+{ #category : #conversion }
+Subtitles >> scaleAll: firstIndex to: newFirst and: lastIndex to: newLast [
+	"scale all the subs using just two reference points
+	self scaleAll: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
 
 	| oldFirst oldLast scale |
 	oldFirst := (self entries at: firstIndex) start.
