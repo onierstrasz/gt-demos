@@ -123,25 +123,15 @@ Subtitles >> gtNewEntriesFor: aView [
 { #category : #initialization }
 Subtitles >> initializeEntries [
 	entries := ((String crlf repeat: 2) split: self file asFileReference contents)
-			collectWithIndex: [ :each : index | 
+			collectWithIndex: [ :each :index | 
 				| lines times |
 				lines := String crlf split: each.
 				times := '--> ' split: lines second.
-			"	{#start -> (self asDuration: times first).
-					#end -> (self asDuration: times second).
-					#newStart -> (self asDuration: times first).
-					#newEnd -> (self asDuration: times second).
-					#lines -> (lines allButFirst: 2)} asDictionary"
-					
 				Subtitle new
 					number: index;
 					start: (self asDuration: times first);
 					end: (self asDuration: times second);
-					lines: (lines allButFirst: 2)
-					
-					
-					
-					 ]
+					lines: (lines allButFirst: 2) ]
 ]
 
 { #category : #conversion }
