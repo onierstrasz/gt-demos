@@ -29,14 +29,10 @@ Subtitle >> gtItemsFor: aView [
 	^ aView forward
 		title: 'Items';
 		priority: 10;
-		object: [ {
-		'number' -> self number asString.
-		'start' -> self start asString.
-		'end' -> self end asString.
-		'lines' -> (' ' join: self lines).
-		
-		
-		} asDictionary ];
+		object: [ {'number' -> self number asString.
+				'start' -> self start asString.
+				'end' -> self end asString.
+				'lines' -> (' ' join: self lines)} asDictionary ];
 		view: #gtItemsFor:
 ]
 

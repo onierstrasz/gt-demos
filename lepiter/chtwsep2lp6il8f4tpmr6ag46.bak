@@ -18,6 +18,80 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:15:56.47562+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:16:04.146388+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6P7NltquDQCEipywABjLYA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "**TO DO** add proper test cases."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:15:53.670496+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:15:53.670496+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WL3RltquDQCEjm8/ABjLYA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2023-01-16T18:39:55.402244+01:00"
 					}
 				},
@@ -66,14 +140,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-16T18:39:35.306699+01:00"
+						"dateAndTimeString" : "2023-01-17T18:09:12.810547+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ec+2zcauDQCl2IqrCocP0w=="
 				},
-				"code" : "ahb := './pharo-local/iceberg/onierstrasz/gt-demos/doc/Subs/Au hasard Balthazar (1966) en.srt' asFileReference."
+				"code" : "subdir := './pharo-local/iceberg/onierstrasz/gt-demos/doc/Subs' asFileReference.\rahb := subdir / 'Au hasard Balthazar (1966) en.srt'."
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -439,6 +513,40 @@
 								"uidString" : "ek7r5tmuDQCaLQqyDuKoKQ=="
 							},
 							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> [ :node | node first ].\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines.\rsubcrlf := (sub , separator)\r\t\t==> [ :nodes | \r\t\t\t{nodes first.\r\t\t\t\tnodes second first.\r\t\t\t\tnodes second third.\r\t\t\t\tnodes third} ].\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-17T17:53:11.227801+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-17T17:53:12.946127+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "xIOcRdquDQCe6ewcDuKoKQ=="
+							},
+							"code" : "result := (subFile parse: ahb contents).\rresult copyFrom: result size -5 to: result size "
 						}
 					]
 				},
@@ -577,156 +685,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:20.603545+01:00"
+									"dateAndTimeString" : "2023-01-17T18:14:46.186457+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "r0tBO9quDQCe3UK4DuKoKQ=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten\r\t\t==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> [ :node | node first ].\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines.\rsubcrlf := (sub , separator)\r\t\t==> [ :nodes | \r\t\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\rsubFile := (subcrlf / sub) star.\r"
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:38:13.055843+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:17.479107+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "B4ATENquDQCb6HUADuKoKQ=="
-							},
-							"code" : "Subtitles new\r\tentries: (subFile parse: ahb contents);\r\tfile: ahb."
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:49:57.213705+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:04.878138+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "egrXOdquDQCeXyfzDuKoKQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "**BUG** There is a bug at the very end."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:31.185618+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:52:54.357018+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "AHkSPNquDQCe5cdeDuKoKQ=="
-							},
-							"code" : "result := (subFile parse: ahb contents).\rresult copyFrom: result size -5 to: result size "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:05.538364+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:05.538364+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "kh6LOtquDQCe2N9XDuKoKQ=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
+							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten\r\t\t==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> [ :node | node first ].\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines\t==> [ :nodes | \r\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\rsubcrlf := (sub , separator)\r\t ==> [ :node | node first ].\rsubFile := (subcrlf / sub) star.\rSubtitles new\r\tentries: (subFile parse: ahb contents);\r\tfile: ahb."
 						}
 					]
 				},
