@@ -60,7 +60,7 @@ Subtitles >> asPParser [
 					==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].
 			timestamp := time , ' --> ' asPParser , time , crlf.
 			line := crlf negate plus flatten.
-			linecrlf := (line , crlf) ==> [ :node | node first ].
+			linecrlf := (line , crlf) ==> #first.
 			lines := (linecrlf / line) plus.
 			sub := (number , timestamp , lines)
 					==> [ :nodes | 
@@ -69,7 +69,7 @@ Subtitles >> asPParser [
 							start: nodes second first;
 							end: nodes second third;
 							lines: nodes third ].
-			subcrlf := (sub , separator) ==> [ :node | node first ].
+			subcrlf := (sub , separator) ==> #first.
 			subFile := (subcrlf / sub) star.
 			parser := subFile end ].
 	^ parser

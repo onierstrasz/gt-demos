@@ -250,14 +250,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T11:31:28.100826+01:00"
+									"dateAndTimeString" : "2023-01-17T18:56:37.629168+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ZOQaudSuDQCFDwcDDonG7w=="
 							},
-							"code" : "cr := #newline asPParser.\rline := cr negate star flatten.\rfile := (line , cr) star.\rfile parse: ahb contents."
+							"code" : "crlf := #newline asPParser.\rline := cr negate star flatten.\rfile := (line , cr) star.\rfile parse: ahb contents."
 						}
 					]
 				},
@@ -396,14 +396,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:26:24.46591+01:00"
+									"dateAndTimeString" : "2023-01-17T18:56:29.991537+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ik1pkdmuDQCWCEAMDuKoKQ=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rline := crlf negate plus flatten.\rlinecrlf := line, crlf ==> [: node | node first ].\rlines := ((linecrlf) / line) plus.\rsub := lines.\rsubcrlf := (sub , separator) ==> [ :nodes | nodes first ].\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
+							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rline := crlf negate plus flatten.\rlinecrlf := line, crlf ==> #first.\rlines := ((linecrlf) / line) plus.\rsub := lines.\rsubcrlf := (sub , separator) ==> #first.\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
 						}
 					]
 				},
@@ -505,14 +505,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:35:36.879986+01:00"
+									"dateAndTimeString" : "2023-01-17T18:56:21.449997+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ek7r5tmuDQCaLQqyDuKoKQ=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> [ :node | node first ].\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines.\rsubcrlf := (sub , separator)\r\t\t==> [ :nodes | \r\t\t\t{nodes first.\r\t\t\t\tnodes second first.\r\t\t\t\tnodes second third.\r\t\t\t\tnodes third} ].\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
+							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> #first.\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines.\rsubcrlf := (sub , separator)\r\t\t==> [ :nodes | \r\t\t\t{nodes first.\r\t\t\t\tnodes second first.\r\t\t\t\tnodes second third.\r\t\t\t\tnodes third} ].\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
 						},
 						{
 							"__type" : "pharoSnippet",
@@ -685,14 +685,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T18:14:46.186457+01:00"
+									"dateAndTimeString" : "2023-01-17T18:56:08.384434+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "r0tBO9quDQCe3UK4DuKoKQ=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten\r\t\t==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> [ :node | node first ].\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines\t==> [ :nodes | \r\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\rsubcrlf := (sub , separator)\r\t ==> [ :node | node first ].\rsubFile := (subcrlf / sub) star.\rSubtitles new\r\tentries: (subFile parse: ahb contents);\r\tfile: ahb."
+							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten\r\t\t==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> #first.\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines\t==> [ :nodes | \r\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\rsubcrlf := (sub , separator)\r\t ==> [ :node | node first ].\rsubFile := (subcrlf / sub) star.\rSubtitles new\r\tentries: (subFile parse: ahb contents);\r\tfile: ahb."
 						}
 					]
 				},
@@ -946,6 +946,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:16:37.138006+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-17T18:16:44.107358+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vCNgmdquDQCE831bABjLYA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We still need some proper test cases."
 			},
 			{
 				"__type" : "textSnippet",
