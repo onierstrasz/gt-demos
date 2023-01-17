@@ -22,7 +22,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'file',
-		'entries'
+		'entries',
+		'parser'
 	],
 	#category : #GtDemos
 }
@@ -32,10 +33,46 @@ Subtitles class >> for: aFileReference [
 	^ self new file: aFileReference
 ]
 
+{ #category : #'instance creation' }
+Subtitles class >> parseFrom: aFileReference [
+	^ self new
+		file: aFileReference;
+		parseFile
+]
+
 { #category : #conversion }
 Subtitles >> asDuration: aTime [
 	"Add a DAYS field and change the comma to a period."
 	^ ('00:' , aTime replaceAll: $, with: $.) asDuration
+]
+
+{ #category : #petitparser }
+Subtitles >> asPParser [
+	| crlf separator number digits time timestamp line linecrlf lines sub subcrlf subFile |
+	parser
+		ifNil: [ crlf := #newline asPParser.
+			separator := crlf plus.
+			number := (#digit asPParser plus flatten , crlf)
+					==> [ :node | node first asNumber ].
+			digits := #digit asPParser plus.
+			time := (digits , $: asPParser , digits , $: asPParser , digits
+					, $, asPParser , digits) flatten
+					==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].
+			timestamp := time , ' --> ' asPParser , time , crlf.
+			line := crlf negate plus flatten.
+			linecrlf := (line , crlf) ==> [ :node | node first ].
+			lines := (linecrlf / line) plus.
+			sub := number , timestamp , lines.
+			subcrlf := (sub , separator)
+					==> [ :nodes | 
+						Subtitle new
+							number: nodes first;
+							start: nodes second first;
+							end: nodes second third;
+							lines: nodes third ].
+			subFile := (subcrlf / sub) star.
+			parser := subFile end ].
+	^ parser
 ]
 
 { #category : #conversion }
@@ -155,6 +192,11 @@ Subtitles >> newContents [
 			stream
 				nextPutAll: String crlf ].
 	^ stream contents
+]
+
+{ #category : #'instance creation' }
+Subtitles >> parseFile [
+	self entries: (self asPParser parse: self file contents)
 ]
 
 { #category : #printing }
