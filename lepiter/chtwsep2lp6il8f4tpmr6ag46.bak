@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-17T18:15:53.670496+01:00"
+						"dateAndTimeString" : "2023-01-25T14:47:25.020449+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-17T18:15:53.670496+01:00"
+						"dateAndTimeString" : "2023-01-25T14:47:26.854302+01:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,81 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
+				"string" : "Reference: "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:48:02.409479+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:48:02.409479+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r1k0nnivDQC0ztV1BmdtFw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
 				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:48:02.876262+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:48:02.876262+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uGg3nnivDQC00qybBmdtFw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Here we follow the [Parsing with PetitParser2](http://kursjan.github.io/petitparser2/) tutorial."
 			},
 			{
 				"__type" : "textSnippet",
@@ -250,14 +324,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T18:56:37.629168+01:00"
+									"dateAndTimeString" : "2023-01-25T14:17:01.663847+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ZOQaudSuDQCFDwcDDonG7w=="
 							},
-							"code" : "crlf := #newline asPParser.\rline := cr negate star flatten.\rfile := (line , cr) star.\rfile parse: ahb contents."
+							"code" : "cr := #newline asPParser.\rline := cr negate star flatten.\rlinecr := (line, cr) ==> #first.\rfile := linecr star.\rfile parse: ahb contents."
 						}
 					]
 				},
@@ -322,7 +396,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T16:36:00.075704+01:00"
+									"dateAndTimeString" : "2023-01-25T14:17:24.473305+01:00"
 								}
 							},
 							"uid" : {
@@ -332,7 +406,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "We subs split on 2+ newlines. Note that the last line might not end with a cr."
+							"string" : "We split subs on 2+ newlines. Note that the last line might not end with a cr."
 						},
 						{
 							"__type" : "textSnippet",
@@ -396,14 +470,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T18:56:29.991537+01:00"
+									"dateAndTimeString" : "2023-01-25T14:25:16.420112+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "ik1pkdmuDQCWCEAMDuKoKQ=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rline := crlf negate plus flatten.\rlinecrlf := line, crlf ==> #first.\rlines := ((linecrlf) / line) plus.\rsub := lines.\rsubcrlf := (sub , separator) ==> #first.\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
+							"code" : "cr := #newline asPParser.\rseparator := cr plus.\rline := cr negate plus flatten.\rlinecr := line, cr ==> #first.\rlines := (linecr / line) plus.\rsub := lines.\rsubcr := (sub , separator) ==> #first.\rsubFile := (subcr / sub) star.\rsubFile parse: ahb contents."
 						}
 					]
 				},
@@ -437,6 +511,152 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#Parsing subs"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:14:40.900482+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:15:07.969413+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "yrS5JnivDQCrz9SgBmdtFw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Having productions like `linecr / line` can generate a lot of backtracking."
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:15:09.700838+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:15:12.375527+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "jeGWKHivDQCs5297BmdtFw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "How to fix this?"
+						},
+						{
+							"__type" : "pharoSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:15:20.273045+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-01-25T14:40:31.973744+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "H4FAKXivDQCtJwueBmdtFw=="
+							},
+							"code" : "cr := #newline asPParser.\rseparator := cr plus.\rline := cr negate plus flatten.\rcrLine := (cr , line) ==> #second.\r\rsub := (line , crLine star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsepSub := (separator , sub) ==> #second.\rsubFile := (sub , sepSub star , cr star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsubFile end parse: ahb contents"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:14:29.334526+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-01-25T14:14:36.640451+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KwQLJnivDQCrgGFRBmdtFw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Fixing the backtracking"
 			},
 			{
 				"__type" : "textSnippet",
@@ -494,7 +714,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:26:42.555473+01:00"
+									"dateAndTimeString" : "2023-01-25T14:39:18.521897+01:00"
 								}
 							},
 							"editEmail" : {
@@ -505,48 +725,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T18:56:21.449997+01:00"
+									"dateAndTimeString" : "2023-01-25T14:42:51.177729+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "ek7r5tmuDQCaLQqyDuKoKQ=="
+								"uidString" : "vH/6fnivDQCzuqImBmdtFw=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> #first.\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines.\rsubcrlf := (sub , separator)\r\t\t==> [ :nodes | \r\t\t\t{nodes first.\r\t\t\t\tnodes second first.\r\t\t\t\tnodes second third.\r\t\t\t\tnodes third} ].\rsubFile := (subcrlf / sub) star.\rsubFile parse: ahb contents."
-						},
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:53:11.227801+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:53:12.946127+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "xIOcRdquDQCe6ewcDuKoKQ=="
-							},
-							"code" : "result := (subFile parse: ahb contents).\rresult copyFrom: result size -5 to: result size "
+							"code" : "cr := #newline asPParser.\rseparator := cr plus.\rline := cr negate plus flatten.\rcrLine := (cr , line) ==> #second.\r\r\rnumber := (#digit asPParser plus flatten , cr)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , cr.\r\rlines := (line , crLine star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsub := (number , timestamp , lines)\r\t\t==> [ :nodes | \r\t\t\t{nodes first.\r\t\t\t\tnodes second first.\r\t\t\t\tnodes second third.\r\t\t\t\tnodes third} ].\r\rsepSub := (separator , sub) ==> #second.\rsubFile := (sub , sepSub star , cr star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsubFile end parse: ahb contents"
 						}
 					]
 				},
@@ -674,7 +860,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T17:50:17.478002+01:00"
+									"dateAndTimeString" : "2023-01-25T14:44:48.099457+01:00"
 								}
 							},
 							"editEmail" : {
@@ -685,14 +871,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-17T18:56:08.384434+01:00"
+									"dateAndTimeString" : "2023-01-25T14:45:26.271991+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "r0tBO9quDQCe3UK4DuKoKQ=="
+								"uidString" : "U3WfknivDQC0YHh3BmdtFw=="
 							},
-							"code" : "crlf := #newline asPParser.\rseparator := crlf plus.\rnumber := (#digit asPParser plus flatten , crlf)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten\r\t\t==> [ :node | ('00:' , node replaceAll: $, with: $.) asDuration ].\rtimestamp := time , ' --> ' asPParser , time , crlf.\rline := crlf negate plus flatten.\rlinecrlf := (line , crlf) ==> #first.\rlines := (linecrlf / line) plus.\rsub := number , timestamp , lines\t==> [ :nodes | \r\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\rsubcrlf := (sub , separator)\r\t ==> [ :node | node first ].\rsubFile := (subcrlf / sub) star.\rSubtitles new\r\tentries: (subFile parse: ahb contents);\r\tfile: ahb."
+							"code" : "cr := #newline asPParser.\rseparator := cr plus.\rline := cr negate plus flatten.\rcrLine := (cr , line) ==> #second.\r\r\rnumber := (#digit asPParser plus flatten , cr)\r\t\t==> [ :node | node first asNumber ].\rdigits := #digit asPParser plus.\rtime := (digits , $: asPParser , digits , $: asPParser , digits , $, asPParser\r\t\t, digits) flatten.\rtimestamp := time , ' --> ' asPParser , time , cr.\r\rlines := (line , crLine star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsub := (number , timestamp , lines)\r\t\t==> [ :nodes | \r\t\t\tSubtitle new\r\t\t\t\tnumber: nodes first;\r\t\t\t\tstart: nodes second first;\r\t\t\t\tend: nodes second third;\r\t\t\t\tlines: nodes third ].\r\rsepSub := (separator , sub) ==> #second.\rsubFile := (sub , sepSub star , cr star)\r\t\t==> [ :node | \r\t\t\tnode second\r\t\t\t\taddFirst: node first;\r\t\t\t\tyourself ].\r\rsubFile end parse: ahb contents"
 						}
 					]
 				},

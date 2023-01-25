@@ -32,7 +32,7 @@ Subtitle >> gtItemsFor: aView [
 		object: [ {'number' -> self number asString.
 				'start' -> self start asString.
 				'end' -> self end asString.
-				'lines' -> (' ' join: self lines)} asDictionary ];
+				'lines' -> (' ' join: self lines)} asOrderedDictionary ];
 		view: #gtItemsFor:
 ]
 

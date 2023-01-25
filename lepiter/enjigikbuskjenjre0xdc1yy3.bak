@@ -76,7 +76,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-01-16T18:38:28.03621+01:00"
+												"dateAndTimeString" : "2023-01-16T18:38:30.206023+01:00"
 											}
 										},
 										"uid" : {
@@ -86,7 +86,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Parsing subtitles with PetitPars"
+										"string" : "[[Parsing subtitles with PetitParser2]] "
 									}
 								]
 							},
@@ -120,43 +120,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[Subtitle editor]] "
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-16T18:38:09.358789+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-16T18:38:09.358789+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "cVmXyMauDQClIxvACocP0w=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",
