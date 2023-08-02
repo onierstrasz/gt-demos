@@ -6,10 +6,14 @@ subs := Subtitles for: 'subs.srt' asFileReference
 ```
 
 Adjust the subs like this:
-
 ```
-subs scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes
+subs
+	scaleAll: 1
+	to: 2 minutes + 30 seconds
+	and: 415
+	to: 1 hour + 33 minutes
 ```
+where 1 and 415 are indices of the two references subtitles to be mapped to the new times.
 
 Then write out the new subs:
 ```
@@ -224,7 +228,8 @@ Subtitles >> scale: aScalingArray [
 { #category : #conversion }
 Subtitles >> scale: firstIndex to: newFirst and: lastIndex to: newLast [
 	"Scale just the subs from firstIndex to lastIndex
-	self scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
+	self scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes.
+	This can be used multiple times to map a series of ranges to different times."
 
 	| oldFirst oldLast scale |
 	oldFirst := (self entries at: firstIndex) start.
