@@ -141,14 +141,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-30T18:17:03.415756+01:00"
+						"dateAndTimeString" : "2024-01-30T18:19:45.085435+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "EiZ8e47MDQCHvt7lDMwe3A=="
 				},
-				"code" : "itSubFile := FileLocator home / 'Desktop' / 'To Be or Not to Be (1942) it TO FIX.srt'.\r\rsubsIt := Subtitles for: itSubFile.\rsubsIt\r\tscale: 2\r\tto: 1 minutes + 51 seconds\r\tand: 1240\r\tto: 1 hour + 38 minutes + 18 seconds.\rsubsIt writeNewContents."
+				"code" : "itSubFile := FileLocator home / 'Desktop' / 'To Be or Not to Be (1942) it TO FIX.srt'.\r\rsubsIt := Subtitles for: itSubFile.\rsubsIt\r\tscale: 2\r\tto: 1 minutes + 51.2 seconds\r\tand: 1240\r\tto: 1 hour + 38 minutes + 18.5 seconds.\rsubsIt writeNewContents."
 			}
 		]
 	},
