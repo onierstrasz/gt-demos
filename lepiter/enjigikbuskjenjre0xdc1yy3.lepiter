@@ -87,6 +87,43 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[Parsing subtitles with PetitParser2]] "
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-30T18:02:06.158804+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2024-01-30T18:02:17.366264+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "RqmCdY7MDQCFQ7DqDMwe3A=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Fixing To be or not to be IT subs]] "
 									}
 								]
 							},
@@ -125,45 +162,7 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-01-25T15:12:18.705076+01:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2023-01-25T15:12:19.868555+01:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "XSnV9HivDQC/bYV+BmdtFw=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[Using PetitParser to parse a text file]] "
-									}
-								]
+								"items" : [ ]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -173,7 +172,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-25T15:12:14.13701+01:00"
+									"dateAndTimeString" : "2024-01-30T18:01:12.32249+01:00"
 								}
 							},
 							"editEmail" : {
@@ -184,7 +183,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-01-25T15:12:15.18665+01:00"
+									"dateAndTimeString" : "2024-01-30T18:01:12.32249+01:00"
 								}
 							},
 							"uid" : {
@@ -194,7 +193,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[petitparser]] "
+							"string" : ""
 						},
 						{
 							"__type" : "textSnippet",

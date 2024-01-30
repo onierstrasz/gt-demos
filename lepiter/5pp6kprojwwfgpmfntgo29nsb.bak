@@ -211,14 +211,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-12-06T17:35:50.564227+01:00"
+						"dateAndTimeString" : "2023-01-15T16:51:14.809131+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "y+yKG42rDQCBiTUvDOWwgw=="
 				},
-				"code" : "subs scale: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
+				"code" : "subs scaleAll: 1 to: 2 minutes + 30 seconds and: 415 to: 1 hour + 33 minutes"
 			},
 			{
 				"__type" : "textSnippet",

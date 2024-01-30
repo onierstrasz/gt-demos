@@ -675,7 +675,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-01-15T08:49:28.997401+01:00"
+						"dateAndTimeString" : "2024-01-30T18:01:24.428515+01:00"
 					}
 				},
 				"uid" : {
@@ -685,7 +685,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#Introducing a Subtite object"
+				"string" : "#Introducing a Subtitle object"
 			},
 			{
 				"__type" : "textSnippet",
