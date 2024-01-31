@@ -1,0 +1,110 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T20:22:35.388631+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T20:23:04.194624+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9OLFiaTMDQC6s57EDg77ew=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "English ok; IT To fix\n\n\n28\n00:03:49,702 --> 00:03:52,163\nIf you got the money to pay,\nI give you a plate of beans.\n\n\n2\n00:03:48,262 --> 00:03:52,079\nSe puoi pagare,\nposso darti un piatto di fagioli.\n\n\n1367\n01:52:14,681 --> 01:52:17,559\n- Are these the men?\n- Yeah, that's them...\n\n\n762\n01:51:46,229 --> 01:51:49,705\nGuardate qua. Sono questi?"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T20:23:06.524025+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-31T20:24:52.786534+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5/Ggi6TMDQCxKNyoDg77ew=="
+				},
+				"code" : "itSubFile := FileLocator home / 'Desktop' / 'They Call Me Trinity (1970) it OFF.srt'.\r\rsubsIt := Subtitles for: itSubFile.\rsubsIt\r\tscaleAll: 2\r\tto: 3 minutes + 49.7 seconds\r\tand: 762\r\tto: 1 hour + 52 minutes + 46.3 seconds.\rsubsIt writeNewContents."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-01-31T20:22:35.306267+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-01-31T20:22:35.306267+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Fixing Trinity subs"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "8aa0c489-a4cc-0d00-ba0b-a63e0e0efb7b"
+	}
+}
