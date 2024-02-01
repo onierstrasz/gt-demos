@@ -12,12 +12,12 @@ GtHomeGtDemos >> create [
 	cardsContainer := self newCardsContainer.
 		
 	cardsContainer addChild: (self
-		newHeaderCardWithTitle: 'Gt Demos TOC'
-		description: 'Gt Demos TOC'
+		newHeaderCardWithTitle: 'Oscar''s GT Demos'
+		description: 'Oscar''s GT Demos'
 		size: 200@150
 		content:
 			(BrLabel new
-				text: 'Gt Demos TOC';
+				text: 'Oscar''s GT Demos';
 				aptitude: BrGlamorousLabelAptitude new
 					bold;
 				padding: (BlInsets all: 20)) asScalableElement
@@ -25,7 +25,7 @@ GtHomeGtDemos >> create [
 			| database startPage |
 			database := LeDatabasesRegistry default currentLoadedDefaultLogicalDatabase 
 				databaseNamed: 'onierstrasz/gt-demos/lepiter'.
-			startPage := database pageNamed: 'GT Demos ToC'.
+			startPage := database pageNamed: 'Oscar''s GT Demos'.
 			GtWorldUtility 
 				showSpaceWithTitle: startPage title
 				inPagerWith: [ startPage
