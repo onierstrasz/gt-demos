@@ -5,6 +5,11 @@ Class {
 }
 
 { #category : #accessing }
+GtHomeGtDemos >> sectionTitle [
+	^ 'Oscar''s GT Demos'
+]
+
+{ #category : #accessing }
 GtHomeGtDemos >> todoCard [
 	<gtSectionCard>
 	<gtExample>
